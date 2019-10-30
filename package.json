@@ -1,0 +1,20 @@
+{
+  "name": "tech-out",
+  "version": "1.0.0",
+  "description": "Whitney's Tech Out",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch scss/main.scss:css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wtharden3/tech-out.git"
+  },
+  "author": "Whitney Harden",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wtharden3/tech-out/issues"
+  },
+  "homepage": "https://github.com/wtharden3/tech-out#readme"
+}

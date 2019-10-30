@@ -1,0 +1,49 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.row {
+  max-width: 114rem;
+  background-color: orangered;
+  margin: 0 auto;
+}
+.row:not(:last-child) {
+  margin-bottom: 6rem;
+}
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row [class^=col-] {
+  float: left;
+  margin-bottom: 6rem;
+}
+.row .col-1-of-3 {
+  background-color: paleturquoise;
+  width: calc((100% - 2 * 5rem)/3);
+}
+.row .col-1-of-3:not(:last-child) {
+  margin-right: 5rem;
+}
+.row .col-1-of-4 {
+  background-color: plum;
+  width: calc((100% - 3 * 5rem)/4);
+}
+.row .col-1-of-4:not(:last-child) {
+  margin-right: 5rem;
+}
+
+/*# sourceMappingURL=main.css.map */
