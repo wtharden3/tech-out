@@ -1,29 +1,25 @@
 .logo-bar
 {
     position: relative;
-    height: 10vh;
+    height: $logo-bar-height;
+
+    background-color: $color-black;
     .logo
     {
-        font-family: 'Pacifico', cursive;
-        color: $color-white;
 
         //background-color: plum;
         display: inline-block;
         position: absolute;
-        top: 10%;
-        left: 15%;
+        top: calc(#{$logo-bar-height} * .15);
+        left: 10%;
 
-        .span
-        {
-            color: $color-aqua;
-        }
     }
     .logo-icons
     {
         //background-color: plum;
         display: inline-block;
         position: absolute;
-        top: 10%;
+        top: calc(#{$logo-bar-height}* .15);
         right: 20%;
         
     }

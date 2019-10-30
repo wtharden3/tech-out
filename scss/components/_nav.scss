@@ -1,0 +1,11 @@
+.nav
+{ 
+  &--item
+  {
+    list-style-type: none;
+    float: left;
+
+    margin-right: $gutter-right-sm;
+  }
+  &--link{}
+} 

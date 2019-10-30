@@ -14,25 +14,34 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.logo-bar {
-  position: relative;
-  height: 10vh;
-}
-.logo-bar .logo {
+.logo--text {
   font-family: "Pacifico", cursive;
   color: #f6f6f6;
+  font-size: 3rem;
+}
+.logo--text .span {
+  color: #47d1cc;
+}
+
+.logo-icons {
+  font-size: 3rem;
+}
+
+.logo-bar {
+  position: relative;
+  height: calc(20vh * .45);
+  background-color: #333;
+}
+.logo-bar .logo {
   display: inline-block;
   position: absolute;
-  top: 10%;
-  left: 15%;
-}
-.logo-bar .logo .span {
-  color: #47d1cc;
+  top: calc(calc(20vh * .45) * .15);
+  left: 10%;
 }
 .logo-bar .logo-icons {
   display: inline-block;
   position: absolute;
-  top: 10%;
+  top: calc(calc(20vh * .45)* .15);
   right: 20%;
 }
 
@@ -51,6 +60,11 @@ body {
   color: #f6f6f6;
 }
 
+.nav--item {
+  list-style-type: none;
+  float: left;
+  margin-right: 3rem;
+}
 .row {
   max-width: 114rem;
   background-color: orangered;
@@ -84,9 +98,12 @@ body {
 }
 
 .header {
-  background-color: #333;
-  font-size: 3rem;
-  position: relative;
+  height: 20vh;
+}
+
+.navigation {
+  height: 55%;
+  background-color: plum;
 }
 
 /*# sourceMappingURL=main.css.map */
