@@ -1,0 +1,22 @@
+.logo-bar
+{
+    .logo
+    {
+        font-family: 'Pacifico', cursive;
+        color: $color-white;
+
+        //background-color: plum;
+        display: inline-block;
+
+        .span
+        {
+            color: $color-aqua;
+        }
+    }
+    .logo-icons
+    {
+        //background-color: plum;
+        display: inline-block;
+        
+    }
+}

@@ -1,0 +1,15 @@
+.icons
+{
+    text-decoration: none;
+
+    &--item
+    {
+        list-style-type: none;
+    }
+    .fas,
+    .fab
+    {
+        color: $color-white;
+    }
+}
+        
