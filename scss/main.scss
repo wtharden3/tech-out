@@ -4,11 +4,15 @@
 @import "base/reset";
 @import "base/typography";
 
+@import "components/bg-video";
 @import "components/logo-bar";
 @import "components/icons";
+@import "components/hero";
 @import "components/nav";
 
 @import "layout/grid";
 @import "layout/header";
 @import "layout/nav-bar";
+
+@import "pages/home";
 

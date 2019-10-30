@@ -27,6 +27,16 @@ body {
   font-size: 3rem;
 }
 
+.bg-video {
+  position: absolute;
+  float: left;
+  top: 0;
+  left: 0;
+  height: 80vh;
+  opacity: 0.8;
+  z-index: -1;
+}
+
 .logo-bar {
   position: relative;
   height: calc(20vh * .45);
@@ -58,6 +68,26 @@ body {
 .icons .fas,
 .icons .fab {
   color: #f6f6f6;
+}
+
+.hero {
+  position: relative;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.hero::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.hero--img {
+  position: relative;
+  height: 80vh;
+  overflow: hidden;
+}
+.hero--text {
+  display: inline-block;
+  background-color: plum;
 }
 
 .nav--item {
@@ -111,7 +141,6 @@ body {
 
 .header {
   height: 20vh;
-  margin-bottom: 6rem;
 }
 
 .nav-bar {
