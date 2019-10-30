@@ -1,0 +1,19 @@
+.nav-bar
+{
+    position: relative;
+    height: $nav-bar-height;
+    background-color: $color-white;
+    
+    .nav
+    {
+        position: absolute;
+        bottom: calc(#{$nav-bar-height} * .3);
+        left: 10%;
+    }
+    .search
+    {
+        position: absolute;
+        bottom: calc(#{$nav-bar-height} * .15);
+        right: 10%;
+    }
+}

@@ -65,6 +65,18 @@ body {
   float: left;
   margin-right: 3rem;
 }
+.nav--link:link, .nav--link:visited {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  color: #333;
+}
+.nav--link:hover, .nav--linkactive {
+  color: #47d1cc;
+  border-bottom: 0.1rem solid #47d1cc;
+}
+
 .row {
   max-width: 114rem;
   background-color: orangered;
@@ -99,11 +111,23 @@ body {
 
 .header {
   height: 20vh;
+  margin-bottom: 6rem;
 }
 
-.navigation {
-  height: 55%;
-  background-color: plum;
+.nav-bar {
+  position: relative;
+  height: calc(20vh* .55);
+  background-color: #f6f6f6;
+}
+.nav-bar .nav {
+  position: absolute;
+  bottom: calc(calc(20vh* .55) * .3);
+  left: 10%;
+}
+.nav-bar .search {
+  position: absolute;
+  bottom: calc(calc(20vh* .55) * .15);
+  right: 10%;
 }
 
 /*# sourceMappingURL=main.css.map */
