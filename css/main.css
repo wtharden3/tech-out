@@ -29,10 +29,20 @@ body {
 
 .heading-primary {
   font-size: 6rem;
+  font-weight: 300;
 }
 
 .tagline {
   font-size: 2.5rem;
+}
+
+.heading-section {
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+
+.bold {
+  font-weight: 700;
 }
 
 .bg-video {
@@ -41,25 +51,25 @@ body {
   top: 0;
   left: 0;
   height: 80vh;
-  opacity: 0.8;
+  opacity: 0.6;
   z-index: -1;
 }
 
 .logo-bar {
   position: relative;
-  height: calc(20vh * .45);
+  height: calc(13rem * .45);
   background-color: #333;
 }
 .logo-bar .logo {
   display: inline-block;
   position: absolute;
-  top: calc(calc(20vh * .45) * .15);
+  top: calc(calc(13rem * .45) * .15);
   left: 10%;
 }
 .logo-bar .logo-icons {
   display: inline-block;
   position: absolute;
-  top: calc(calc(20vh * .45)* .15);
+  top: calc(calc(13rem * .45)* .15);
   right: 20%;
 }
 
@@ -154,23 +164,32 @@ body {
 }
 
 .header {
-  height: 20vh;
+  height: 13rem;
 }
 
 .nav-bar {
   position: relative;
-  height: calc(20vh* .55);
+  height: calc(13rem* .55);
   background-color: #f6f6f6;
 }
 .nav-bar .nav {
   position: absolute;
-  bottom: calc(calc(20vh* .55) * .3);
+  bottom: calc(calc(13rem* .55) * .3);
   left: 10%;
 }
 .nav-bar .search {
   position: absolute;
-  bottom: calc(calc(20vh* .55) * .15);
+  bottom: calc(calc(13rem* .55) * .15);
   right: 10%;
+}
+
+.marketing {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.marketing .heading-section {
+  background-color: plum;
+  display: inline-block;
 }
 
 /*# sourceMappingURL=main.css.map */
