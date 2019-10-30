@@ -5,6 +5,12 @@
     &--item
     {
         list-style-type: none;
+        float: left;
+        
+        &:not(:last-child)
+        {
+            margin-right: $gutter-right-sm;
+        }
     }
     .fas,
     .fab

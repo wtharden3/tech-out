@@ -1,5 +1,7 @@
 .logo-bar
 {
+    position: relative;
+    height: 10vh;
     .logo
     {
         font-family: 'Pacifico', cursive;
@@ -7,6 +9,9 @@
 
         //background-color: plum;
         display: inline-block;
+        position: absolute;
+        top: 10%;
+        left: 15%;
 
         .span
         {
@@ -17,6 +22,9 @@
     {
         //background-color: plum;
         display: inline-block;
+        position: absolute;
+        top: 10%;
+        right: 20%;
         
     }
 }
