@@ -1,0 +1,19 @@
+.hero
+{
+    position: relative;
+    margin-bottom: $gutter-bottom-sm;
+    text-align: center;
+
+    @include clearfix;
+    &--img
+    {
+        position: relative;
+        height: 80vh;
+        overflow: hidden;
+    }
+    &--text
+    {
+        display: inline-block;
+        background-color: plum;
+    }
+} 
