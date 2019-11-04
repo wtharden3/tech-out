@@ -2,11 +2,10 @@
 .marketing
 {
     text-align: center;
-    margin-bottom: $gutter-bottom-sm;
-    .heading-section
+    
+    &-header
     {
-        background-color: plum;
-        display: inline-block;
+        margin-bottom: 5rem;
     }
 }
 .gallery{}

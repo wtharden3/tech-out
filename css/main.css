@@ -3,7 +3,7 @@
 *::after {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 html {
@@ -131,36 +131,46 @@ body {
   border-bottom: 0.1rem solid #47d1cc;
 }
 
-.row {
-  max-width: 114rem;
-  background-color: orangered;
-  margin: 0 auto;
-}
-.row:not(:last-child) {
+.container {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
   margin-bottom: 6rem;
 }
-.row::after {
-  content: "";
-  display: table;
-  clear: both;
+
+[class^=row] {
+  background-color: #333;
 }
-.row [class^=col-] {
-  float: left;
+[class^=row]:not(:last-child) {
   margin-bottom: 6rem;
 }
-.row .col-1-of-3 {
-  background-color: paleturquoise;
-  width: calc((100% - 2 * 5rem)/3);
+
+.row__space-around {
+  display: flex;
+  justify-content: space-around;
 }
-.row .col-1-of-3:not(:last-child) {
-  margin-right: 5rem;
+
+.row__space-between {
+  display: flex;
+  justify-content: space-around;
 }
-.row .col-1-of-4 {
+
+.row__space-center {
+  display: flex;
+  justify-content: center;
+}
+
+.row__end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.item {
+  padding: 10rem;
   background-color: plum;
-  width: calc((100% - 3 * 5rem)/4);
 }
-.row .col-1-of-4:not(:last-child) {
-  margin-right: 5rem;
+.item:not(:last-child) {
+  margin-right: 3rem;
 }
 
 .header {
@@ -185,11 +195,9 @@ body {
 
 .marketing {
   text-align: center;
-  margin-bottom: 3rem;
 }
-.marketing .heading-section {
-  background-color: plum;
-  display: inline-block;
+.marketing-header {
+  margin-bottom: 5rem;
 }
 
 /*# sourceMappingURL=main.css.map */

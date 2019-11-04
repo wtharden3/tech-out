@@ -1,44 +1,56 @@
-.row
+
+.container
 {
-    max-width: $grid-width;
-    background-color: orangered;
-    margin: 0 auto;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+
+    margin-bottom: 6rem;
+}
+[class^="row"]
+{
+
+    background-color: #333;
 
     &:not(:last-child)
     {
-        margin-bottom: $gutter-bottom;
+        margin-bottom: 6rem;
     }
+}
+.row__space-around
+{
+    display: flex;
+    justify-content: space-around;
+    
 
-    @include clearfix;
+    
+}
+.row__space-between
+{
+    display: flex;
+    justify-content: space-around;
+    
 
-    [class^=col-]
+}
+.row__space-center
+{
+    display: flex;
+    justify-content: center;
+    
+}
+.row__end
+{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.item
+{
+    padding: 10rem;
+    background-color: plum;
+    
+    &:not(:last-child)
     {
-        float: left;
-        margin-bottom: $gutter-bottom;
-    }
-    .col-1-of-3
-    {
-        background-color: paleturquoise;
-        width: calc((100% - 2 * #{$gutter-right})/3);
-
-        &:not(:last-child)
-        {
-            margin-right: $gutter-right;
-        }
-
-
-    }
-    .col-1-of-4
-    {
-        background-color: plum;
-        width: calc((100% - 3 * #{$gutter-right})/4); 
-
-        &:not(:last-child)
-        {
-            margin-right: $gutter-right;
-        }
-
-
-
+        margin-right: 3rem;
     }
 }
