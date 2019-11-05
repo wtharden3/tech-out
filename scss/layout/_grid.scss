@@ -52,6 +52,32 @@
         //margin-right: 3rem;
     }
 }
+//header
+.logo--container-template
+{
+    background-color: royalblue;
+    color: white;
+    font-size: 2.8rem;
+    display: flex;
+    justify-content: space-between;
+}
+.logo--row--template
+{
+    border: .1rem solid white;
+}
+.nav--container--template
+{
+    background-color: #333;
+    color: white;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+.nav--row--template
+{
+    border: .1rem solid white;
+}
+//main
 .container--template
 {
     background-color: #ccc;
@@ -63,7 +89,7 @@
 }
 .row--template
 {
-    background-color: palevioletred;
+    background-color: powderblue;
     padding: 3rem;
     border: .1rem solid #333;
     margin: 3rem; 
