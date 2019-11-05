@@ -137,11 +137,12 @@ body {
   margin-bottom: 6rem;
 }
 
-[class^=row] {
+[class^=row__] {
+  flex-wrap: wrap;
   align-content: space-between;
   background-color: #333;
 }
-[class^=row]:not(:last-child) {
+[class^=row__]:not(:last-child) {
   margin-bottom: 6rem;
 }
 
@@ -168,9 +169,43 @@ body {
 .item {
   padding: 10rem;
   background-color: plum;
+  margin: 3rem;
 }
-.item:not(:last-child) {
-  margin-right: 3rem;
+.container--template {
+  background-color: #ccc;
+  padding: 1rem;
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+}
+
+.row--template {
+  background-color: palevioletred;
+  padding: 3rem;
+  border: 0.1rem solid #333;
+  margin: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.center {
+  justify-content: center;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.flex-end {
+  justify-content: flex-end;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+.space-evenly {
+  justify-content: space-evenly;
 }
 
 .header {

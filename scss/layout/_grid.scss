@@ -6,8 +6,9 @@
     //align-content: space-around; //may need to remove and set max-width???
     margin-bottom: 6rem;
 }
-[class^="row"]
+[class^="row__"]
 {
+    flex-wrap: wrap;
     align-content: space-between;
     background-color: #333;
 
@@ -44,9 +45,50 @@
 {
     padding: 10rem;
     background-color: plum;
+    margin: 3rem;
     
     &:not(:last-child)
     {
-        margin-right: 3rem;
+        //margin-right: 3rem;
     }
+}
+.container--template
+{
+    background-color: #ccc;
+    padding: 1rem;
+    display: flex;
+
+    flex-flow: column wrap;
+    align-content: center;
+}
+.row--template
+{
+    background-color: palevioletred;
+    padding: 3rem;
+    border: .1rem solid #333;
+    margin: 3rem; 
+
+    //control rows within row
+    display: flex;
+    flex-wrap: wrap;
+}
+.center
+{
+    justify-content: center;
+}
+.space-between
+{
+    justify-content: space-between;
+}
+.flex-end
+{
+    justify-content: flex-end;
+}
+.space-around
+{
+    justify-content: space-around;
+}
+.space-evenly
+{
+    justify-content: space-evenly;
 }
