@@ -52,10 +52,14 @@
         //margin-right: 3rem;
     }
 }
+.item--marketing
+{
+    width: 30%;
+}
 //header
 .logo--container-template
 {
-    background-color: royalblue;
+    background-color: #333;
     color: white;
     font-size: 2.8rem;
     display: flex;
@@ -67,8 +71,8 @@
 }
 .nav--container--template
 {
-    background-color: #333;
-    color: white;
+    background-color: #fff;
+    color: #333;
     font-size: 2.5rem;
     display: flex;
     justify-content: space-between;
@@ -81,7 +85,7 @@
 .container--template
 {
     background-color: #ccc;
-    padding: 1rem;
+    padding: 2rem;
     display: flex;
 
     flex-flow: column wrap;
@@ -117,4 +121,28 @@
 .space-evenly
 {
     justify-content: space-evenly;
+}
+.mleft-sm
+{
+    margin-left: 6rem; //the container--template padding + row--template padding
+}
+.mleft-md
+{
+    margin-left: 9rem; //the container--template padding + row--template padding
+}
+.mleft-lg
+{
+    margin-left: 12rem; //the container--template padding + row--template padding
+}
+.mright-sm
+{
+    margin-right: 6rem; //the container--template padding + row--template padding
+}
+.mright-md
+{
+    margin-right: 9rem; //the container--template padding + row--template padding
+}
+.mright-lg
+{
+    margin-right: 12rem; //the container--template padding + row--template padding
 }

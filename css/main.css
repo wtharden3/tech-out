@@ -32,6 +32,12 @@ body {
   font-weight: 300;
 }
 
+.heading-primary--main {
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
 .tagline {
   font-size: 2.5rem;
 }
@@ -171,8 +177,12 @@ body {
   background-color: plum;
   margin: 3rem;
 }
+.item--marketing {
+  width: 30%;
+}
+
 .logo--container-template {
-  background-color: royalblue;
+  background-color: #333;
   color: white;
   font-size: 2.8rem;
   display: flex;
@@ -184,8 +194,8 @@ body {
 }
 
 .nav--container--template {
-  background-color: #333;
-  color: white;
+  background-color: #fff;
+  color: #333;
   font-size: 2.5rem;
   display: flex;
   justify-content: space-between;
@@ -197,7 +207,7 @@ body {
 
 .container--template {
   background-color: #ccc;
-  padding: 1rem;
+  padding: 2rem;
   display: flex;
   flex-flow: column wrap;
   align-content: center;
@@ -232,6 +242,30 @@ body {
   justify-content: space-evenly;
 }
 
+.mleft-sm {
+  margin-left: 6rem;
+}
+
+.mleft-md {
+  margin-left: 9rem;
+}
+
+.mleft-lg {
+  margin-left: 12rem;
+}
+
+.mright-sm {
+  margin-right: 6rem;
+}
+
+.mright-md {
+  margin-right: 9rem;
+}
+
+.mright-lg {
+  margin-right: 12rem;
+}
+
 .header {
   height: 13rem;
 }
@@ -253,7 +287,7 @@ body {
 }
 
 .marketing-header {
-  margin-bottom: 5rem;
+  margin-bottom: 0;
 }
 
 /*# sourceMappingURL=main.css.map */
