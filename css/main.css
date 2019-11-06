@@ -94,25 +94,22 @@ body {
   color: #f6f6f6;
 }
 
-.hero {
-  position: relative;
-  margin-bottom: 3rem;
+.section--hero {
   text-align: center;
 }
-.hero::after {
+.section--hero::after {
   content: "";
   display: table;
   clear: both;
 }
-.hero--img {
+.section--hero--img {
   position: relative;
   height: 85vh;
   overflow: hidden;
 }
-.hero--text {
+.section--hero--text {
   width: 80%;
   display: inline-block;
-  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -173,12 +170,12 @@ body {
 }
 
 .item {
-  padding: 10rem;
+  padding: 2rem;
   background-color: plum;
   margin: 3rem;
 }
 .item--marketing {
-  width: 30%;
+  width: 25%;
 }
 
 .logo--container-template {
@@ -203,6 +200,14 @@ body {
 
 .nav--row--template {
   border: 0.1rem solid white;
+}
+
+.hero--container--template {
+  background-color: royalblue;
+  display: flex;
+  color: white;
+  font-size: 5rem;
+  flex-flow: column wrap;
 }
 
 .container--template {
@@ -286,6 +291,21 @@ body {
   right: 10%;
 }
 
+.main--home {
+  display: block;
+  max-width: 96rem;
+  margin: 0 auto;
+}
+
+.hero-home {
+  max-width: 96rem;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.marketing--section {
+  text-align: center;
+}
 .marketing-header {
   margin-bottom: 0;
 }

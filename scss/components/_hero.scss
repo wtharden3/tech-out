@@ -1,7 +1,6 @@
-.hero
+.section--hero
 {
-    position: relative;
-    margin-bottom: $gutter-bottom-sm;
+
     text-align: center;
 
     @include clearfix;
@@ -16,7 +15,7 @@
         width: 80%;
         display: inline-block;
         //background-color: plum;
-        position: absolute;
+        //position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);

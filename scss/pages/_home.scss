@@ -1,7 +1,21 @@
-.hero{}
+.main--home
+{
+    display: block;
+    max-width: 96rem;
+    margin: 0 auto;
+}
+.hero-home
+{
+    max-width: 96rem;
+    text-align: center;
+    margin: 0 auto;
+}
 .marketing
 {
-    
+    &--section
+    {
+        text-align: center;
+    }
     &-header
     {
         margin-bottom: 0;
