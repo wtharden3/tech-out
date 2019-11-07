@@ -96,13 +96,19 @@ body {
   font-weight: 300;
 }
 
+.hero-heading {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 7rem;
+}
+
 .heading-primary--main {
   font-size: 3.5rem;
   text-transform: uppercase;
   font-weight: 300;
 }
 
-.tagline {
+.hero-tagline {
   font-size: 2.5rem;
 }
 
@@ -118,6 +124,10 @@ body {
 .icon-laptop {
   font-size: 7.5rem;
   color: rgba(51, 51, 51, 0.8);
+}
+
+.footer-heading {
+  color: #f6f6f6;
 }
 
 .copyright {
@@ -445,7 +455,11 @@ body {
 }
 
 .hero-home {
-  max-width: 96rem;
+  text-align: center;
+}
+
+.hero-tagline {
+  max-width: 75%;
   text-align: center;
   margin: 0 auto;
 }
