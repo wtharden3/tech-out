@@ -1,3 +1,67 @@
+.mleft-sm {
+  margin-left: 6rem;
+}
+
+.mleft-md {
+  margin-left: 9rem;
+}
+
+.mleft-lg {
+  margin-left: 12rem;
+}
+
+.mright-sm {
+  margin-right: 6rem;
+}
+
+.mright-md {
+  margin-right: 9rem;
+}
+
+.mright-lg {
+  margin-right: 12rem;
+}
+
+.mtop-sm {
+  margin-top: 6rem;
+}
+
+.mtop-md {
+  margin-top: 9rem;
+}
+
+.mtop-lg {
+  margin-top: 12rem;
+}
+
+.mtop-xl {
+  margin-top: 15rem;
+}
+
+.mbot-tiny {
+  margin-bottom: 1.5rem;
+}
+
+.mbot-xs {
+  margin-bottom: 3rem;
+}
+
+.mbot-sm {
+  margin-bottom: 6rem;
+}
+
+.mbot-md {
+  margin-bottom: 9rem;
+}
+
+.mbot-lg {
+  margin-bottom: 12rem;
+}
+
+.mbot-xl {
+  margin-bottom: 15rem;
+}
+
 *,
 *::before,
 *::after {
@@ -33,7 +97,7 @@ body {
 }
 
 .heading-primary--main {
-  font-size: 4rem;
+  font-size: 3.5rem;
   text-transform: uppercase;
   font-weight: 300;
 }
@@ -49,6 +113,11 @@ body {
 
 .bold {
   font-weight: 700;
+}
+
+.icon-laptop {
+  font-size: 7.5rem;
+  color: rgba(51, 51, 51, 0.8);
 }
 
 .bg-video {
@@ -170,12 +239,14 @@ body {
 }
 
 .item {
-  padding: 2rem;
+  padding: 1rem;
   background-color: plum;
   margin: 3rem;
 }
 .item--marketing {
-  width: 25%;
+  width: 26%;
+  padding: 1rem;
+  margin: 3rem;
 }
 
 .logo--container-template {
@@ -186,12 +257,8 @@ body {
   justify-content: space-between;
 }
 
-.logo--row--template {
-  border: 0.1rem solid white;
-}
-
 .nav--container--template {
-  background-color: #fff;
+  background: #fff;
   color: #333;
   font-size: 2.5rem;
   display: flex;
@@ -199,19 +266,35 @@ body {
 }
 
 .nav--row--template {
-  border: 0.1rem solid white;
+  padding: 2rem 0 0.5rem 0;
 }
 
 .hero--container--template {
-  background-color: royalblue;
+  background: linear-gradient(to bottom, rgba(246, 246, 246, 0.8), rgba(51, 51, 51, 0.8)), url("../img/coverr-lago.jpg");
   display: flex;
   color: white;
   font-size: 5rem;
   flex-flow: column wrap;
+  height: 85vh;
+  justify-content: center;
 }
 
 .container--template {
   background-color: #ccc;
+  padding: 2rem;
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+}
+
+.container--marketing {
+  padding: 1rem;
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+}
+
+.container--gallery {
   padding: 2rem;
   display: flex;
   flex-flow: column wrap;
@@ -223,6 +306,19 @@ body {
   padding: 3rem;
   border: 0.1rem solid #333;
   margin: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row--marketing {
+  padding: 1rem;
+  margin: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row--marketing-pillars {
+  margin: 1rem;
   display: flex;
   flex-wrap: wrap;
 }
@@ -247,34 +343,6 @@ body {
   justify-content: space-evenly;
 }
 
-.mleft-sm {
-  margin-left: 6rem;
-}
-
-.mleft-md {
-  margin-left: 9rem;
-}
-
-.mleft-lg {
-  margin-left: 12rem;
-}
-
-.mright-sm {
-  margin-right: 6rem;
-}
-
-.mright-md {
-  margin-right: 9rem;
-}
-
-.mright-lg {
-  margin-right: 12rem;
-}
-
-.header {
-  height: 13rem;
-}
-
 .nav-bar {
   position: relative;
   height: calc(13rem* .55);
@@ -292,8 +360,7 @@ body {
 }
 
 .main--home {
-  display: block;
-  max-width: 96rem;
+  max-width: 114rem;
   margin: 0 auto;
 }
 

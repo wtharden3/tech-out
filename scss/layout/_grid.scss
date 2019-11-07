@@ -43,7 +43,7 @@
 }
 .item
 {
-    padding: 2rem;
+    padding: 1rem;
     background-color: plum;
     margin: 3rem;
     
@@ -55,7 +55,10 @@
 //remove
 .item--marketing
 {
-    width: 25%;
+    width: 26%;
+    padding: 1rem;
+    //background-color: plum;
+    margin: 3rem;
 }
 //header
 .logo--container-template
@@ -68,30 +71,37 @@
 }
 .logo--row--template
 {
-    border: .1rem solid white;
+    //border: .1rem solid white;
 }
 .nav--container--template
 {
-    background-color: #fff;
+    background: #fff;
     color: #333;
     font-size: 2.5rem;
     display: flex;
     justify-content: space-between;
+    
 }
 .nav--row--template
 {
-    border: .1rem solid white;
+    padding: 2rem 0 .5rem 0;
+    //border: .1rem solid white;
 }
 .hero--container--template
 {
-    background-color: royalblue;
-    display: flex;
+    background: linear-gradient(to bottom, rgba($color-white, .8),rgba($color-black, .8)),
+    url('../img/coverr-lago.jpg');
+    display: flex; 
     color: white;
     font-size: 5rem;
     flex-flow: column wrap;
+    height: 85vh;
+    justify-content: center;
 
 }
-//main
+//MAIN*********
+
+//template
 .container--template
 {
     background-color: #ccc;
@@ -101,12 +111,56 @@
     flex-flow: column wrap;
     align-content: center;
 }
+//custom
+.container--marketing
+{
+    //background-color: #ccc;
+    padding: 1rem;
+    display: flex;
+
+    flex-flow: column wrap;
+    align-content: center;
+}
+//custom
+.container--gallery
+{
+    //background-color: #ccc;
+    padding: 2rem;
+    display: flex;
+
+    flex-flow: column wrap;
+    align-content: center;
+}
+//template
 .row--template
 {
     background-color: powderblue;
     padding: 3rem;
     border: .1rem solid #333;
     margin: 3rem; 
+
+    //control rows within row
+    display: flex;
+    flex-wrap: wrap;
+}
+//custom
+.row--marketing
+{
+    //background-color: powderblue;
+    padding: 1rem;
+    //border: .1rem solid #333;
+    margin: 2rem; 
+
+    //control rows within row
+    display: flex;
+    flex-wrap: wrap;
+}
+.row--marketing-pillars
+{
+    //background-color: powderblue;
+    //padding: 2rem;
+    //border: .1rem solid #333;
+    margin: 1rem; 
 
     //control rows within row
     display: flex;
@@ -132,28 +186,4 @@
 .space-evenly
 {
     justify-content: space-evenly;
-}
-.mleft-sm
-{
-    margin-left: 6rem; //the container--template padding + row--template padding
-}
-.mleft-md
-{
-    margin-left: 9rem; //the container--template padding + row--template padding
-}
-.mleft-lg
-{
-    margin-left: 12rem; //the container--template padding + row--template padding
-}
-.mright-sm
-{
-    margin-right: 6rem; //the container--template padding + row--template padding
-}
-.mright-md
-{
-    margin-right: 9rem; //the container--template padding + row--template padding
-}
-.mright-lg
-{
-    margin-right: 12rem; //the container--template padding + row--template padding
 }

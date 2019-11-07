@@ -24,7 +24,7 @@ body
 }
 .heading-primary--main
 {
-    font-size: 4rem;
+    font-size: 3.5rem;
     text-transform: uppercase;
     font-weight: 300;
 }
@@ -41,4 +41,9 @@ body
 .bold
 {
     font-weight: 700;
+}
+.icon-laptop
+{
+    font-size: 7.5rem;
+    color: rgba($color-black, .8);
 }
