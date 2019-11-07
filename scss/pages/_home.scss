@@ -1,7 +1,7 @@
 .main--home
 {
     //display: block;
-    max-width: 114rem;
+    max-width: 100%;
     margin: 0 auto;
 }
 .hero-home
@@ -21,6 +21,10 @@
         margin-bottom: 0;
     }
 }
-.gallery{}
+.gallery--section
+{
+    width: 100%;
+    background-color: #ccc;
+}
 .cta{}
 .form{}
