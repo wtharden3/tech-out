@@ -10,3 +10,9 @@
     width: 100%;
     color: $color-white;
 }
+.copyright{
+    @include respon(tab-port)
+    {
+        padding: 1rem;
+    }
+}

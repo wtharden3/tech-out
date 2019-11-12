@@ -1,6 +1,7 @@
 .mleft-sm
 {
     margin-left: 6rem; //the container--template padding + row--template padding
+
 }
 .mleft-md
 {
@@ -72,3 +73,86 @@
 .ptb-md{padding: 9rem 0;}
 .ptb-lg{padding: 12rem 0;}
 .ptb-xl{padding: 15rem 0;}
+
+//////-----------------------Media Query --phone------------------------
+@include respon(tab-port)
+    {
+     
+        .mleft-sm
+        {
+            margin-left: 3rem; //the container--template padding + row--template padding
+        }
+        .mleft-md
+        {
+            margin-left: 6rem; //the container--template padding + row--template padding
+        }
+        .mleft-lg
+        {
+            margin-left: 9rem; //the container--template padding + row--template padding
+        }
+        .mright-sm
+        {
+            margin-right: 3rem; //the container--template padding + row--template padding
+        }
+        .mright-md
+        {
+            margin-right: 6rem; //the container--template padding + row--template padding
+        }
+        .mright-lg
+        {
+            margin-right: 9rem; //the container--template padding + row--template padding
+        }
+        .mtop-sm
+        {
+            margin-top: 3rem; //the container--template padding + row--template padding
+        }
+        .mtop-md
+        {
+            margin-top: 6rem; //the container--template padding + row--template padding
+        }
+        .mtop-lg
+        {
+            margin-top: 9rem; //the container--template padding + row--template padding
+        }
+        .mtop-xl
+        {
+            margin-top: 12rem; //the container--template padding + row--template padding
+        }
+        .mbot-tiny
+        {
+            margin-bottom: 0.5rem; //the container--template padding + row--template padding
+        }
+        .mbot-xs
+        {
+            margin-bottom: 1.5rem; //the container--template padding + row--template padding
+        }
+        .mbot-sm
+        {
+            margin-bottom: 3rem; //the container--template padding + row--template padding
+        }
+        .mbot-md
+        {
+            margin-bottom: 6rem; //the container--template padding + row--template padding
+        }
+        .mbot-lg
+        {
+            margin-bottom: 9rem; //the container--template padding + row--template padding
+        }
+        .mbot-xl
+        {
+            margin-bottom: 12rem; //the container--template padding + row--template padding
+        }
+
+
+        //padding
+
+        .ptb-tiny{padding: 0.5rem 0;}
+        .ptb-xs{padding: 1.5rem 0;}
+        .ptb-sm{padding: 3rem 0;}
+        .ptb-md{padding: 6rem 0;}
+        .ptb-lg{padding: 9rem 0;}
+        .ptb-xl{padding: 12rem 0;}
+
+
+    }
+    

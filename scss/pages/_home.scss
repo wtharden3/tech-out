@@ -16,6 +16,11 @@
     //border: 1px solid black;
     text-align: center;
     margin: 0 auto;
+
+    @include respon(tab-port)
+    {
+        max-width: 95%;
+    }
 }
 .marketing
 {
@@ -37,4 +42,31 @@
 {
     width: 100%;
     background-color: #ffffff; 
+}
+
+@include respon(tab-port)
+{
+    .nav--container--template
+    {
+        flex-flow: column wrap;
+        align-items: center; 
+    }
+    .mobile-nav-list
+    {
+        //border: 1px solid black;
+        width: 100%;
+        padding: .7rem 1rem;
+        margin-left: 1rem;
+    }
+    .mobile-nav-search
+    {
+        display: none;
+        //visibility: hidden;
+        //border: 1px solid black;
+    }
+    .search-bar
+    {
+        display: flex;
+        flex-flow: row nowrap;
+    }
 }
