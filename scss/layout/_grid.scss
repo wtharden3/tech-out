@@ -177,6 +177,13 @@
     flex-wrap: wrap;
 }
 //custom
+.logo--row--template{
+    @include respon(tab-port)
+    {
+        margin-left: 0;
+    }
+}
+//custom
 .row--marketing-pillars
 {
     //background-color: powderblue;
@@ -226,6 +233,11 @@
     flex-flow: column wrap;
     align-content: space-evenly;
     width: 23%;
+
+    @include respon(tab-port)
+    {
+        width: 80%;
+    }
 }
 
 //template
