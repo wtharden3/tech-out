@@ -7,3 +7,21 @@
         clear: both;
     }
 }
+
+////---------------Media Query Mixins-----------------------
+/*
+0 - 600px: phone
+600 - 900px: tablet-portrait
+900 - 1200px: tablet-land
+(1200 -1800p) - desktop/normal styles
+1200px + : Large Desktop
+
+em conversion
+
+600/16px = 37.5
+
+    @mixin respon-phone
+    {
+        @media (max-width:600px
+    }
+*/

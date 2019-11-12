@@ -62,6 +62,46 @@
   margin-bottom: 15rem;
 }
 
+.ptb-tiny {
+  padding: 1.5rem 0;
+}
+
+.ptb-xs {
+  padding: 3rem 0;
+}
+
+.ptb-sm {
+  padding: 6rem 0;
+}
+
+.ptb-md {
+  padding: 9rem 0;
+}
+
+.ptb-lg {
+  padding: 12rem 0;
+}
+
+.ptb-xl {
+  padding: 15rem 0;
+}
+
+/*
+0 - 600px: phone
+600 - 900px: tablet-portrait
+900 - 1200px: tablet-land
+(1200 -1800p) - desktop/normal styles
+1200px + : Large Desktop
+
+em conversion
+
+600/16px = 37.5
+
+    @mixin respon-phone
+    {
+        @media (max-width:600px
+    }
+*/
 *,
 *::before,
 *::after {
@@ -281,6 +321,7 @@ body {
   font-size: 2.8rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .nav--container--template {
@@ -331,7 +372,6 @@ body {
   padding: 2rem;
   display: flex;
   flex-flow: column wrap;
-  align-content: center;
 }
 
 .container--template--footer {
