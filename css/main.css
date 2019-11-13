@@ -526,6 +526,12 @@ body {
   flex-wrap: wrap;
 }
 
+@media (max-width: 56.25em) {
+  .logo--row--template {
+    margin-left: 0;
+  }
+}
+
 .row--marketing-pillars {
   margin: 1rem;
   display: flex;
@@ -561,6 +567,11 @@ body {
   align-content: space-evenly;
   width: 23%;
 }
+@media (max-width: 56.25em) {
+  .row--template--footer {
+    width: 80%;
+  }
+}
 
 .item {
   padding: 1rem;
@@ -588,7 +599,7 @@ body {
     flex-flow: column wrap;
     justify-content: center;
     align-content: center;
-    margin: 0.5rem auto;
+    margin: 0 auto;
   }
 }
 
