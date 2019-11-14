@@ -335,6 +335,12 @@ body {
   text-align: center;
   border: 1px solid rgba(51, 51, 51, 0.6);
 }
+@media (max-width: 19.375em) {
+  .figure {
+    transform: scale(0.6);
+    margin: 0;
+  }
+}
 
 .figcaption {
   width: 100%;
