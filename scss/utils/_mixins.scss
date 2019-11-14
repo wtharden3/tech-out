@@ -18,6 +18,7 @@
 
 ////---------------Media Query Mixins-----------------------
 /*
+0 - 300px: tiny
 0 - 600px: phone
 600 - 900px: tablet-portrait
 900 - 1200px: tablet-land
@@ -25,7 +26,7 @@
 1200px + : Large Desktop
 
 em conversion
-
+300/16px = 19.375
 600/16px = 37.5em
 900/16px = 56.25em tab-port
 1200/16px = 75em
@@ -37,6 +38,11 @@ Order: Reset + typography >>> general layout + grid > page layout > components
 //breakpoint mixins
 @mixin respon($breakpoint)
 {
+    @if $breakpoint == tiny
+    {
+        @media (max-width: 19.375em)
+        {@content};
+    }
     @if $breakpoint == phone
     {
         @media (max-width: 37.5em)

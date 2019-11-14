@@ -51,6 +51,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include respon(tiny)
+    {
+        flex-flow: column;
+    }
 }
 .logo--row--template
 {
@@ -89,7 +93,7 @@
 .mobile-search-container
 {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 .hero--container--template
 {
@@ -216,6 +220,12 @@
     //control rows within row
     display: flex;
     flex-wrap: wrap;
+
+    @include respon(tab-port)
+    {
+        padding: 2rem 0;
+        margin: 2rem 0;
+    }
 }
 //custom
 .row--marketing
@@ -267,6 +277,10 @@
         justify-content: center;
         align-content: center;
         padding: .5rem 0;
+    }
+    @include respon(tiny)
+    {
+        overflow: hidden;
     }
 }
 .row--template--footer
@@ -321,12 +335,17 @@
         padding: .5rem 0;
         margin: 1.5rem 0;
     }
+
+    @include respon(tiny)
+    {
+        overflow: hidden;
+    }
     
     
 }
 .item-template--footer
 {
-    padding: 1rem 0;
+    padding: 1rem 0; 
     //background-color: plum;
     
 }
