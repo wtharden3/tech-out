@@ -56,11 +56,11 @@
 {
     @include respon(tab-port)
     {
-        margin: 1rem .5rem;
+        margin: 1rem 1.5rem;
     }
     @include respon(phone)
     {
-        margin: .5rem .3rem;
+        margin: .5rem 1.3rem;
     }
 }
 .nav--container--template

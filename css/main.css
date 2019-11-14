@@ -475,12 +475,12 @@ body {
 
 @media (max-width: 56.25em) {
   .logo--row--template {
-    margin: 1rem 0.5rem;
+    margin: 1rem 1.5rem;
   }
 }
 @media (max-width: 37.5em) {
   .logo--row--template {
-    margin: 0.5rem 0.3rem;
+    margin: 0.5rem 1.3rem;
   }
 }
 
