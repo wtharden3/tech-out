@@ -38,4 +38,10 @@
     {
         list-style-type: none;
     }
+
+    //functionality
+    &-checkbox:not(:checked) ~ &-list
+    {
+        display: none;
+    }
 }

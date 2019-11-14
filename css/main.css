@@ -752,6 +752,9 @@ body {
 .mobile-nav .mobile-nav-item {
   list-style-type: none;
 }
+.mobile-nav-checkbox:not(:checked) ~ .mobile-nav-list {
+  display: none;
+}
 
 .main--home {
   max-width: 100%;
