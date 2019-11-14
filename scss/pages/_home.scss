@@ -46,11 +46,7 @@
 
 @include respon(tab-port)
 {
-    .nav--container--template
-    {
-        flex-flow: column wrap;
-        align-items: center; 
-    }
+
     .mobile-nav-list
     {
         //border: 1px solid black;

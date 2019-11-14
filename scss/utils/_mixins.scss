@@ -8,6 +8,14 @@
     }
 }
 
+//square
+@mixin square($size)
+{
+    height: $size;
+    width: $size;
+    border-radius: 10%;
+}
+
 ////---------------Media Query Mixins-----------------------
 /*
 0 - 600px: phone

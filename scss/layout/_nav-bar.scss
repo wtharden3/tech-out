@@ -27,3 +27,15 @@
 {
     margin: 1px;
 }
+.nav-toggle
+{
+    .nav-btn
+    {
+
+    }
+    .nav-icon
+    {
+        @include square(7rem);
+        //background-color: black;
+    }
+}

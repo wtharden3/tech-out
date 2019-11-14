@@ -52,7 +52,17 @@
     justify-content: space-between;
     align-items: center;
 }
-
+.logo--row--template
+{
+    @include respon(tab-port)
+    {
+        margin: 1rem .5rem;
+    }
+    @include respon(phone)
+    {
+        margin: .5rem .3rem;
+    }
+}
 .nav--container--template
 {
     background: #fff;
@@ -61,9 +71,15 @@
     display: flex;
     justify-content: space-between;
 
-    border: 1px solid black;
-    
+    //border: 1px solid black;  
+
+    @include respon(tab-port)
+    {
+        flex-flow: column wrap;
+        justify-content: center;
+    }
 }
+
 .nav--row--template
 {
     padding: 2rem 0 .5rem 0;
@@ -83,6 +99,10 @@
     @include respon(tab-port)
     {
         height: 60vh;
+    }
+    @include respon(phone)
+    {
+        height: 50vh;
     }
 
 }
@@ -177,13 +197,6 @@
     flex-wrap: wrap;
 }
 //custom
-.logo--row--template{
-    @include respon(tab-port)
-    {
-        margin-left: 0;
-    }
-}
-//custom
 .row--marketing-pillars
 {
     //background-color: powderblue;
@@ -255,6 +268,11 @@
     padding: 1rem;
     //background-color: plum;
     margin: 3rem;
+
+    @include respon(tab-port)
+    {
+        width: 75%;
+    }
 
 }
 .item--gallery
