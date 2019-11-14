@@ -75,8 +75,9 @@
 
     @include respon(tab-port)
     {
-        flex-flow: column wrap;
-        justify-content: center;
+        // flex-flow: column wrap;
+        // justify-content: center;
+        display: none;
     }
 }
 
@@ -110,6 +111,28 @@
 {
    display: flex;
    flex-flow: row nowrap; 
+}
+.mobile-nav-container
+{
+    display: none;
+
+    @include respon(tab-port)
+    {
+        background: #fff; 
+        color: #333;
+        font-size: 2.5rem;
+        display: flex;
+        //justify-content: flex-end;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        margin: 1rem 1.5rem;
+    }
+    @include respon(phone)
+    {
+        margin: 1rem 1.3rem;
+    }
+
 }
 //********************************MAIN*********
 ////---CONTAINERS--

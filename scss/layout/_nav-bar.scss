@@ -15,7 +15,7 @@
         position: absolute;
         bottom: calc(#{$nav-bar-height} * .15);
         right: 10%;
-    }
+    } 
 }
 .search-input
     {
@@ -27,15 +27,15 @@
 {
     margin: 1px;
 }
-.nav-toggle
-{
-    .nav-btn
-    {
 
-    }
-    .nav-icon
+.mobile-nav
+{
+    &-checkbox
     {
-        @include square(7rem);
-        //background-color: black;
+        display: none;
+    }
+    .mobile-nav-item
+    {
+        list-style-type: none;
     }
 }
