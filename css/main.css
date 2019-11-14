@@ -501,6 +501,11 @@ body {
   padding: 2rem 0 0.5rem 0;
 }
 
+.mobile-search-container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .hero--container--template {
   background: linear-gradient(to bottom, rgba(246, 246, 246, 0.8), rgba(51, 51, 51, 0.8)), url("../img/coverr-lago.jpg");
   display: flex;
@@ -629,12 +634,14 @@ body {
   margin: 0;
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
 }
 @media (max-width: 56.25em) {
   .row--gallery {
     flex-flow: column wrap;
     justify-content: center;
     align-content: center;
+    padding: 0.5rem 0;
   }
 }
 
