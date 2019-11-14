@@ -166,6 +166,11 @@
 
     flex-flow: column wrap;
     align-content: center;
+
+    @include respon(tab-port)
+    {
+        padding: 1rem 0;
+    }
 }
 .container--template--form
 {
@@ -303,6 +308,12 @@
     padding: 1rem;
     //background-color: plum;
     margin: 3rem;
+
+    @include respon(tab-port)
+    {
+        padding: .5rem 0;
+        margin: 1.5rem 0;
+    }
     
     
 }

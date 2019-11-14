@@ -568,6 +568,11 @@ body {
   flex-flow: column wrap;
   align-content: center;
 }
+@media (max-width: 56.25em) {
+  .container--gallery {
+    padding: 1rem 0;
+  }
+}
 
 .container--template--form {
   padding: 2rem;
@@ -668,6 +673,12 @@ body {
   padding: 1rem;
   margin: 3rem;
 }
+@media (max-width: 56.25em) {
+  .item--gallery {
+    padding: 0.5rem 0;
+    margin: 1.5rem 0;
+  }
+}
 
 .item-template--footer {
   padding: 1rem 0;
@@ -754,6 +765,16 @@ body {
 }
 .mobile-nav-checkbox:not(:checked) ~ .mobile-nav-list {
   display: none;
+}
+
+.mobile-search-input {
+  border: 1px solid rgba(211, 211, 211, 0.6);
+  width: 80%;
+  border-radius: 5%;
+  padding: 0.5rem;
+}
+.mobile-search-btn {
+  font-size: 1.5rem;
 }
 
 .main--home {
