@@ -805,6 +805,9 @@ body {
   display: none;
 }
 
+.mobile-search-container {
+  padding-bottom: 2rem;
+}
 .mobile-search-input {
   border: 1px solid rgba(211, 211, 211, 0.8);
   width: 80%;
