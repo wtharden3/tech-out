@@ -3,6 +3,11 @@
     position: relative;
     height: $nav-bar-height;
     background-color: $color-white;
+
+    @include respon(tab-port)
+    {
+        display: none;
+    }
     
     .nav
     {
@@ -28,11 +33,16 @@
     margin: 1px;
 }
 
-.mobile-nav
+
+.mobile-nav-bar
 {
     &-checkbox
     {
         display: none;
+    }
+    &-icon
+    {
+       padding-top: 1rem; 
     }
     .mobile-nav-item
     {

@@ -213,30 +213,34 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.logo--text {
+.logo-bar-text {
   font-family: "Pacifico", cursive;
   color: #f6f6f6;
   font-size: 3rem;
 }
-.logo--text .span {
+.logo-bar-text .span {
   color: #47d1cc;
 }
-@media (max-width: 37.5em) {
-  .logo--text {
-    font-size: 2rem;
-  }
-}
-
-.logo-icons {
-  font-size: 3rem;
-}
 @media (max-width: 56.25em) {
-  .logo-icons {
+  .logo-bar-text {
     font-size: 2.5rem;
   }
 }
 @media (max-width: 37.5em) {
-  .logo-icons {
+  .logo-bar-text {
+    font-size: 2rem;
+  }
+}
+
+.icon-fa-custom {
+  color: #f6f6f6;
+}
+
+.icon-fa-custom--bars {
+  font-size: 2.5rem;
+}
+@media (max-width: 37.5em) {
+  .icon-fa-custom--bars {
     font-size: 2rem;
   }
 }
@@ -376,6 +380,16 @@ body {
   right: 20%;
 }
 
+.icon-group--list {
+  list-style-type: none;
+}
+.icon-group--item {
+  display: inline-block;
+}
+.icon-group--item:not(:last-child) {
+  margin-right: 2rem;
+}
+
 .icons {
   text-decoration: none;
 }
@@ -416,11 +430,12 @@ body {
 
 .nav--item {
   list-style-type: none;
-  float: left;
+  display: inline-block;
+}
+.nav--item:not(:last-child) {
   margin-right: 3rem;
 }
 .nav--link:link, .nav--link:visited {
-  display: inline-block;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 1.6rem;
@@ -439,32 +454,20 @@ body {
 }
 
 .container {
-  background-color: green;
   color: white;
   border: 1px solid black;
-  text-align: center;
 }
 
 .container-fluid {
-  background-color: gold;
-  color: white;
   border: 1px solid black;
 }
 
 .row {
-  background-color: khaki;
-  color: black;
-  text-align: center;
-}
-
-div[class^=col] {
-  background-color: blueviolet;
   border: 1px solid black;
-  padding: 2rem 0;
 }
 
 div[class^=col-] {
-  background-color: greenyellow;
+  border: 1px solid black;
 }
 
 .footer-top {
@@ -486,10 +489,23 @@ div[class^=col-] {
   }
 }
 
+.header-logo-bar-layout {
+  background-color: black;
+}
+
+.logo-bar-logo {
+  padding-top: 1rem;
+}
+
 .nav-bar {
   position: relative;
   height: calc(13rem* .55);
   background-color: #f6f6f6;
+}
+@media (max-width: 56.25em) {
+  .nav-bar {
+    display: none;
+  }
 }
 .nav-bar .nav {
   position: absolute;
@@ -512,13 +528,17 @@ div[class^=col-] {
   margin: 1px;
 }
 
-.mobile-nav-checkbox {
+.mobile-nav-bar {
+  padding-top: 1rem;
+  float: right;
+}
+.mobile-nav-bar-checkbox {
   display: none;
 }
-.mobile-nav .mobile-nav-item {
+.mobile-nav-bar .mobile-nav-item {
   list-style-type: none;
 }
-.mobile-nav-checkbox:not(:checked) ~ .mobile-nav-list {
+.mobile-nav-bar-checkbox:not(:checked) ~ .mobile-nav-bar-list {
   display: none;
 }
 

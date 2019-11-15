@@ -1,3 +1,21 @@
+.icon-group
+{
+    &--list
+    {
+        list-style-type: none;
+    }
+    &--item
+    {
+        display: inline-block;
+        
+        &:not(:last-child)
+        {
+            margin-right: 2rem;
+        }
+    }
+}
+
+
 .icons
 {
     text-decoration: none;

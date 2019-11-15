@@ -2,7 +2,7 @@ body
 {
     font-family:'Roboto', sans-serif;
 }
-.logo--text
+.logo-bar-text
 {
     font-family: 'Pacifico', cursive;
     color: $color-white;
@@ -13,15 +13,6 @@ body
         color: $color-aqua;
     }
 
-    @include respon(phone)
-    {
-        font-size: 2rem;
-    }
-}
-.logo-icons
-{
-    font-size: 3rem;
-
     @include respon(tab-port)
     {
         font-size: 2.5rem;
@@ -31,6 +22,33 @@ body
         font-size: 2rem;
     }
 }
+.icon-fa-custom
+{
+    color: $color-white;
+}
+.icon-fa-custom--bars
+{
+    font-size: 2.5rem;
+
+    @include respon(phone)
+    {
+        font-size: 2rem;
+    }
+}
+
+// .logo-icons
+// {
+//     //font-size: 3rem; //same
+
+//     @include respon(tab-port)
+//     {
+//         font-size: 2.5rem;
+//     }
+//     @include respon(phone)
+//     {
+//         font-size: 2rem;
+//     }
+// }
 // .heading-primary
 // {
 //     font-size: 6rem;
