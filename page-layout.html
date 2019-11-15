@@ -17,61 +17,58 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <header>
-            <div class="logo--container-template">
-                <div class="logo--row--template left">Logo</div>
-                <div class="logo--row--template right">Social Icons</div>
-            </div>
-            <div class="nav--container--template">
-                <div class="nav--row--template left">Main nav items</div>
-                <div class="nav--row--template right">Search bar</div>
-            </div>
-            <div class="hero--container--template">
-                <div class="hero-home">
-                    <div class="hero--row">
-                        <h1 class="hero-heading">Welcome!</h1>
-                    </div>
-                    <div class="hero--row">
-                        <p class="hero-tagline">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque veritatis voluptates aspernatur non officiis autem. Doloribus sit consequatur.</p>
-                    </div>
+            <div class="container-fluid">
+                <div class="row">
+                   <div class="col-sm-6">Logo (with container-fluid)</div>
+                   <div class="col-sm-6">Social Icons (with container-fluid)</div>
+                </div>
+                <div class="row">
+                    <div class="col">Main nav items (with container-fluid)</div>
+                    <div class="col">Search bar (with container-fluid)</div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <h1 class="hero-heading">Welcome! (with container-fluid)</h1>
+                        <p class="hero-tagline">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque veritatis voluptates aspernatur non officiis autem. Doloribus sit consequatur. (with container-fluid)</p>
+                    </div> 
                 </div>
             </div>
         </header>
 
-        <main>
-            <div class="container--template">
-                <div class="row--template center">
-                    <div class="item">Row center 1</div>
-                    <div class="item">Row center 2</div>
-                    <div class="item">Row center 3</div>
-                </div>
-                <div class="row--template space-between">
-                    <div class="item">Row space-between 1</div>
-                    <div class="item">Row space-between 2</div>
-                    <div class="item">Row space-between 3</div>
-                    <div class="item">Row space-between 4</div>
-                </div>
-                <div class="row--template flex-start">
-                    <div class="item">Row flex-start 1</div>
-                    <div class="item">Row flex-start 2</div>
-                    <div class="item">Row flex-start 3</div>
-                </div>
-                <div class="row--template flex-end">
-                    <div class="item">Row flex-end 1</div>
-                    <div class="item">Row flex-end 2</div>
-                    <div class="item">Row flex-end 3</div>
-                </div>
-                <div class="row--template space-around">
-                    <div class="item">Row space-around 1</div>
-                    <div class="item">Row space-around 2</div>
-                    <div class="item">Row space-around 3</div>
-                </div>
-                <div class="row--template space-evenly">
-                    <div class="item">Row space-evenly 1</div>
-                    <div class="item">Row space-evenly 2</div>
-                    <div class="item">Row space-evenly 3</div>
-                    <div class="item">Row space-evenly 4</div>
-                    <div class="item">Row space-evenly 5</div>
-                </div>
+        <main class="container">
+            <div class="row">
+                <div class="col">Col 1 (within container)</div>
+                <div class="col">Col 2 (within container)</div>
+                <div class="col">Col 3 (within container)</div>
+            </div>
+            <div class="row">
+                <div class="col-sm">col-sm 1 sm - &lt;s560px (within container)</div>
+                <div class="col-sm">col-sm 2 sm - &lt;s560px (within container)</div>
+                <div class="col-sm">col-sm 3 sm - &lt;s560px (within container)</div>
+                <div class="col-sm">col-sm 4 sm - &lt;s560px (within container)</div>
+            </div>
+            <div class="row">
+                <div class="col-4">col-4 1 (within container)</div>
+                <div class="col-4">col-4 2 (within container)</div>
+                <div class="col-4">col-4 3 (within container)</div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3">col 1 (within container)</div>
+                <div class="col-sm-3">col 2 (within container)</div>
+                <div class="col-sm-3">col 3 (within container)</div>
+                <div class="col-sm-3">col 3 (within container)</div>
+            </div>
+            <div class="row">
+                <div class="col">col 1 (within container)</div>
+                <div class="col">col 2 (within container)</div>
+                <div class="col">col 3 (within container)</div>
+            </div>
+            <div class="row">
+                <div class="col">col 1 (within container)</div>
+                <div class="col">col 2 (within container)</div>
+                <div class="col">col 3 (within container)</div>
+                <div class="col">col 4 (within container)</div>
+                <div class="col">col 5 (within container)</div>
             </div>
         </main>
         <footer></footer>

@@ -438,6 +438,35 @@ body {
   border-bottom: 0.1rem solid #47d1cc;
 }
 
+.container {
+  background-color: green;
+  color: white;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.container-fluid {
+  background-color: gold;
+  color: white;
+  border: 1px solid black;
+}
+
+.row {
+  background-color: khaki;
+  color: black;
+  text-align: center;
+}
+
+div[class^=col] {
+  background-color: blueviolet;
+  border: 1px solid black;
+  padding: 2rem 0;
+}
+
+div[class^=col-] {
+  background-color: greenyellow;
+}
+
 .footer-top {
   background-color: #5d5d5d;
   width: 100%;
