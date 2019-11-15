@@ -774,11 +774,6 @@ body {
   height: calc(13rem* .55);
   background-color: #f6f6f6;
 }
-@media (max-width: 56.25em) {
-  .nav-bar {
-    display: none;
-  }
-}
 .nav-bar .nav {
   position: absolute;
   bottom: calc(calc(13rem* .55) * .3);
@@ -800,17 +795,13 @@ body {
   margin: 1px;
 }
 
-.mobile-nav-bar {
-  padding-top: 1rem;
-  float: right;
-}
-.mobile-nav-bar-checkbox {
+.mobile-nav-checkbox {
   display: none;
 }
-.mobile-nav-bar .mobile-nav-item {
+.mobile-nav .mobile-nav-item {
   list-style-type: none;
 }
-.mobile-nav-bar-checkbox:not(:checked) ~ .mobile-nav-bar-list {
+.mobile-nav-checkbox:not(:checked) ~ .mobile-nav-list {
   display: none;
 }
 
