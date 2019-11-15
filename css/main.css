@@ -528,12 +528,11 @@ div[class^=col-] {
   margin: 1px;
 }
 
-.mobile-nav-bar {
-  padding-top: 1rem;
-  float: right;
-}
 .mobile-nav-bar-checkbox {
   display: none;
+}
+.mobile-nav-bar-icon {
+  padding-top: 1rem;
 }
 .mobile-nav-bar .mobile-nav-item {
   list-style-type: none;
