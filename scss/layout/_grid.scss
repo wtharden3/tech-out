@@ -6,6 +6,9 @@
     background-color: #333;
     color: white;
     font-size: 2.8rem;
+
+    //adding to fix overflow issue
+    //width: 100%;
     
 }
 .logo--row--template
@@ -30,7 +33,7 @@
     //justify-content: space-between;
  
     //border: 1px solid black;  
-
+    //width: 98%;
     @include respon(tab-port)
     {
         // flex-flow: column wrap;
@@ -211,30 +214,30 @@
 //     }
 // }
 //custom
-.row--gallery
-{
-    //background-color: powderblue;
-    padding: .5rem;
-    //border: .1rem solid #333;
-    margin: 0; 
+// .row--gallery
+// {
+//     //background-color: powderblue;
+//     padding: .5rem;
+//     //border: .1rem solid #333;
+//     margin: 0; 
 
-    //control rows within row
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
+//     //control rows within row
+//     display: flex;
+//     flex-wrap: wrap;
+//     width: 100%;
 
-    @include respon(tab-port)
-    {
-        flex-flow: column wrap;
-        justify-content: center;
-        align-content: center;
-        padding: .5rem 0;
-    }
-    @include respon(tiny)
-    {
-        //overflow: hidden;
-    }
-}
+//     @include respon(tab-port)
+//     {
+//         flex-flow: column wrap;
+//         justify-content: center;
+//         align-content: center;
+//         padding: .5rem 0;
+//     }
+//     @include respon(tiny)
+//     {
+//         //overflow: hidden;
+//     }
+// }
 .row--template--footer
 {
     //background-color: powderblue;
@@ -276,25 +279,25 @@
     }
 
 }
-.item--gallery
-{
-    padding: 1rem;
-    //background-color: plum;
-    margin: 3rem;
+// .item--gallery
+// {
+//     padding: 1rem;
+//     //background-color: plum;
+//     margin: 3rem;
 
-    @include respon(tab-port)
-    {
-        padding: .5rem 0;
-        margin: 1.5rem 0;
-    }
+//     @include respon(tab-port)
+//     {
+//         padding: .5rem 0;
+//         margin: 1.5rem 0;
+//     }
 
-    @include respon(tiny)
-    {
-        //overflow: hidden;
-    }
+//     @include respon(tiny)
+//     {
+//         //overflow: hidden;
+//     }
     
     
-}
+// }
 .item-template--footer
 {
     padding: 1rem 0; 

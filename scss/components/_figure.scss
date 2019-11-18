@@ -1,15 +1,15 @@
-.figure
-{
-    position: relative;
-    text-align: center;
-    border: 1px solid rgba($color-black, .6);
+// .figure
+// {
+//     position: relative;
+//     text-align: center;
+//     border: 1px solid rgba($color-black, .6);
 
-    @include respon(tiny)
-    {
-        transform: scale(0.60);
-        margin: 0;
-    }
-}
+//     @include respon(tiny)
+//     {
+//         transform: scale(0.60);
+//         margin: 0;
+//     }
+// }
 .figcaption
 {
     width: 100%;
