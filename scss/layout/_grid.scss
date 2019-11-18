@@ -6,9 +6,9 @@
     background-color: #333;
     color: white;
     font-size: 2.8rem;
-
+    margin: 0;
     //adding to fix overflow issue
-    width: 100vw;
+    //width: 100vw;
     
 }
 .logo--row--template
@@ -17,11 +17,11 @@
 
     @include respon(tab-port)
     {
-        margin: 1rem 1.5rem;
+        margin: 1rem 0;
     }
     @include respon(phone)
     {
-        margin: .5rem 1.3rem;
+        margin: .5rem 0;
     }
 }
 .nav--container--template
@@ -61,6 +61,7 @@
     font-size: 5rem;
     //flex-flow: column wrap;
     height: 90vh;
+    margin: 0;
     //justify-content: center;
 
     @include respon(tab-port)
