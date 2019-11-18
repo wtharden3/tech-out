@@ -124,13 +124,13 @@
 
                     
 
-                        <div class="row">
+                        <div class="row text-center pt-md-5">
                             <div class="col-md-4">
                                 <figure class="figure figure--gallery--home">
                                     <img 
                                     srcset="https://picsum.photos/id/237/300/200" 
                                     alt="paceholder" class="figure--gallery--image" />
-                                    <figcaption class="figcaption figure--gallery-caption">
+                                    <figcaption class="figure-caption tech-figure-caption">
                                         <p class="figcaption--text">
                                             Lorem ipsum adipisicing elit. Nulla t neque necessitatibus eum, enim eligendi.
                                         </p>
@@ -143,7 +143,7 @@
                                     <img 
                                     srcset="https://picsum.photos/id/0/300/200"
                                     alt="paceholder" class="figure--gallery--image" />
-                                    <figcaption class="figcaption figure--gallery-caption">
+                                    <figcaption class="figure-caption tech-figure-caption">
                                         <p class="figcaption--text">
                                         Lorem ipsum adipisicing elit. Nulla t neque necessitatibus eum, enim eligendi.
                                         </p>
@@ -153,7 +153,7 @@
                             <div class="col-md-4">
                                 <figure class="figure figure--gallery--home">
                                     <img src="https://picsum.photos/id/10/300/200" alt="paceholder" class="figure--gallery--image">
-                                    <figcaption class="figcaption figure--gallery-caption">
+                                    <figcaption class="figure-caption tech-figure-caption">
                                         <p class="figcaption--text">
                                         Lorem ipsum adipisicing elit. Nulla t neque necessitatibus eum, enim eligendi.
                                         </p>
@@ -163,12 +163,12 @@
                         </div>
 
 
-                        <div class="row">
+                        <div class="row text-center">
                             <div class="col-md-4">
-                                <figure class="figure whit-figure">
+                                <figure class="figure figure--gallery--home">
                                     <img src="https://picsum.photos/id/1002/300/200" alt="paceholder" class="figure-img img-fluid">
-                                    <figcaption class="figcaption figure--gallery-caption">
-                                        <p class="fig-caption">
+                                    <figcaption class="figure-caption tech-figure-caption">
+                                        <p class="figcaption--text">
                                         Lorem ipsum adipisicing elit. Nulla t neque necessitatibus eum, enim eligendi.
                                     </p>
                                     </figcaption>
@@ -177,7 +177,7 @@
                             <div class="col-md-4">
                                 <figure class="figure figure--gallery--home">
                                     <img src="https://picsum.photos/id/1015/300/200" alt="paceholder" class="figure--gallery--image">
-                                    <figcaption class="figcaption figure--gallery-caption">
+                                    <figcaption class="figure-caption tech-figure-caption">
                                         <p class="figcaption--text">
                                         Lorem ipsum adipisicing elit. Nulla t neque necessitatibus eum, enim eligendi.
                                         </p>
@@ -187,7 +187,7 @@
                             <div class="col-md-4">
                                 <figure class="figure figure--gallery--home">
                                     <img src="https://picsum.photos/id/1019/300/200" alt="paceholder" class="figure--gallery--image">
-                                    <figcaption class="figcaption figure--gallery-caption">
+                                    <figcaption class="figure-caption tech-figure-caption">
                                         <p class="figcaption--text">
                                         Lorem ipsum adipisicing elit. Nulla t neque necessitatibus eum, enim eligendi.
                                         </p>
@@ -204,16 +204,23 @@
                          <div class="row--template center">
                              <h1 class="heading-primary--main">Contact Us</h1>
                          </div>
-                         <div class="row--template center">
-                             <form action="#" class="form-contact">
-                                 <label for="firstname">First Name</label>
-                                 <input type="text" name="firstname" id="firstname" placeholder="first name"><br><br>
-                                 <label for="lastname">Last Name</label>
-                                 <input type="text" name="lastname" id="lastname" placeholder="last name"><br><br>
-                                 <label for="email">Email Address</label>
-                                 <input type="email" name="email" id="email" placeholder="sample@sample.com"><br><br>
-                                 <input type="submit" btn><br><br>
-                             </form>
+
+                         <div class="row">
+                             <form class="form--home-page--contact-us">
+                                <div class="form-group name">
+                                    <label for="firstName">First Name</label>
+                                    <input type="text" class="form-control" id="firstName" aria-describedby="nameHelp" placeholder="Enter your First Name">
+                                    <small id="nameHelp" class="form-text text-muted">Please type your name</small>
+                                </div>
+                                
+                                <div class="form-group email">
+                                    <label for="email">Email</label>
+                                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter your email">
+                                    <small id="nameHelp" class="form-text text-muted">We never share your info</small>
+                                </div>
+                                
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                                </form>
                          </div>
                      </div>
 

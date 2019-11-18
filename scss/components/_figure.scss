@@ -10,6 +10,14 @@
 //         margin: 0;
 //     }
 // }
+.tech-figure-caption
+{
+    position: relative;
+    font-size: 1.6rem;
+    display: inline-block;
+    width: 100%;
+    background-color: #ccc;
+}
 .figcaption
 {
     width: 100%;
@@ -26,5 +34,9 @@
     {
         position: absolute;
         bottom: 5%;
+        border: 1px solid rgba($color-black, .6);
+        background-color: #ccc;
+        color: $color-black;
+    
     }
 }

@@ -8,7 +8,7 @@
     font-size: 2.8rem;
 
     //adding to fix overflow issue
-    //width: 100%;
+    width: 100vw;
     
 }
 .logo--row--template
@@ -33,7 +33,7 @@
     //justify-content: space-between;
  
     //border: 1px solid black;  
-    //width: 98%;
+    width: 90vw;
     @include respon(tab-port)
     {
         // flex-flow: column wrap;
