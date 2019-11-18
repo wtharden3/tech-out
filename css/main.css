@@ -718,7 +718,12 @@ body {
   color: rgba(211, 211, 211, 0.8);
 }
 
+.hero-home {
+  padding-top: 18%;
+}
+
 .hero-tagline {
+  display: inline-block;
   max-width: 70%;
   text-align: center;
 }
