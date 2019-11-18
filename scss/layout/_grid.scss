@@ -11,7 +11,7 @@
 .logo--row--template
 {
     text-align: center;
-    
+
     @include respon(tab-port)
     {
         margin: 1rem 1.5rem;
@@ -185,33 +185,31 @@
 .row--marketing
 {
     //background-color: powderblue;
-    padding: 1rem;
+    // padding: 1rem;
     //border: .1rem solid #333;
-    margin: 2rem; 
+    margin: 2rem 0 0 3rem; 
 
     //control rows within row
-    display: flex;
-    flex-wrap: wrap;
+    // display: flex;
+    // flex-wrap: wrap;
 }
 //custom
-.row--marketing-pillars
-{
-    //background-color: powderblue;
-    //padding: 2rem;
-    //border: .1rem solid #333;
-    margin: 1rem; 
+// .row--marketing-pillars
+// {
+//     //background-color: powderblue;
+//     //padding: 2rem;
+//     //border: .1rem solid #333;
+//     border: .1rem solid; 
 
-    //control rows within row
-    display: flex;
-    flex-wrap: wrap;
+//     //control rows within row
+//     // display: flex;
+//     // flex-wrap: wrap;
 
-    @include respon(tab-port)
-    {
-        flex-flow: column wrap;
-        justify-content: center;
-        align-content: center;
-    }
-}
+//     @include respon(tab-port)
+//     {
+//         margin: 3rem 0;
+//     }
+// }
 //custom
 .row--gallery
 {

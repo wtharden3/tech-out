@@ -562,23 +562,7 @@ body {
 }
 
 .row--marketing {
-  padding: 1rem;
-  margin: 2rem;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.row--marketing-pillars {
-  margin: 1rem;
-  display: flex;
-  flex-wrap: wrap;
-}
-@media (max-width: 56.25em) {
-  .row--marketing-pillars {
-    flex-flow: column wrap;
-    justify-content: center;
-    align-content: center;
-  }
+  margin: 2rem 0 0 3rem;
 }
 
 .row--gallery {
@@ -735,6 +719,7 @@ body {
 
 .marketing--section {
   text-align: center;
+  padding-top: 4rem;
 }
 .marketing-header {
   margin-bottom: 0;
