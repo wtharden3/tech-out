@@ -18,19 +18,19 @@ body
         font-size: 2rem;
     }
 }
-.logo-icons
-{
-    font-size: 3rem;
+// .logo-icons
+// {
+//     font-size: 3rem;
 
-    @include respon(tab-port)
-    {
-        font-size: 2.5rem;
-    }
-    @include respon(phone)
-    {
-        font-size: 2rem;
-    }
-}
+//     @include respon(tab-port)
+//     {
+//         font-size: 2.5rem;
+//     }
+//     @include respon(phone)
+//     {
+//         font-size: 2rem;
+//     }
+// }
 // .heading-primary
 // {
 //     font-size: 6rem;

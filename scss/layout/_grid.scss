@@ -1,46 +1,4 @@
 
-.container
-{
-    display: flex;
-    flex-flow: column wrap;
-    //align-content: space-around; //may need to remove and set max-width???
-    margin-bottom: 6rem;
-}
-[class^="row__"]
-{
-    flex-wrap: wrap;
-    align-content: space-between;
-    background-color: #333;
-
-    &:not(:last-child)
-    {
-        margin-bottom: 6rem;
-    }
-}
-.row__space-around
-{
-    display: flex;
-    justify-content: space-around;  
-}
-.row__space-between
-{
-    display: flex;
-    justify-content: space-around;
-    
-
-}
-.row__center
-{
-    display: flex;
-    justify-content: center;
-    
-}
-.row__end
-{
-    display: flex;
-    justify-content: flex-end;
-    
-}
 
 //header
 .logo--container-template
@@ -48,16 +6,12 @@
     background-color: #333;
     color: white;
     font-size: 2.8rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    @include respon(tiny)
-    {
-        flex-flow: column;
-    }
+    
 }
 .logo--row--template
 {
+    text-align: center;
+    
     @include respon(tab-port)
     {
         margin: 1rem 1.5rem;
@@ -69,12 +23,12 @@
 }
 .nav--container--template
 {
-    background: #fff;
+    //background: #fff;
     color: #333;
-    font-size: 2.5rem;
-    display: flex;
-    justify-content: space-between;
-
+    //font-size: 2.5rem;
+    //display: flex;
+    //justify-content: space-between;
+ 
     //border: 1px solid black;  
 
     @include respon(tab-port)
@@ -87,7 +41,7 @@
 
 .nav--row--template
 {
-    padding: 2rem 0 .5rem 0;
+    //padding: 2rem 0 .5rem 0;
     //border: .1rem solid white;
 }
 .mobile-search-container
@@ -99,12 +53,12 @@
 {
     background: linear-gradient(to bottom, rgba($color-white, .8),rgba($color-black, .8)),
     url('../img/coverr-lago.jpg');
-    display: flex; 
+    //display: flex; 
     color: white;
     font-size: 5rem;
-    flex-flow: column wrap;
+    //flex-flow: column wrap;
     height: 90vh;
-    justify-content: center;
+    //justify-content: center;
 
     @include respon(tab-port)
     {
@@ -280,7 +234,7 @@
     }
     @include respon(tiny)
     {
-        overflow: hidden;
+        //overflow: hidden;
     }
 }
 .row--template--footer
@@ -338,7 +292,7 @@
 
     @include respon(tiny)
     {
-        overflow: hidden;
+        //overflow: hidden;
     }
     
     

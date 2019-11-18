@@ -1,32 +1,10 @@
-.nav-bar
-{
-    position: relative;
-    height: $nav-bar-height;
-    background-color: $color-white;
-    
-    .nav
-    {
-        position: absolute;
-        bottom: calc(#{$nav-bar-height} * .3);
-        left: 10%;
-    }
-    .search
-    {
-        position: absolute;
-        bottom: calc(#{$nav-bar-height} * .15);
-        right: 10%;
-    } 
-}
+
 .search-input
     {
         border: 1px solid rgba(211,211,211, .8);
-        padding: 0 15%;
-        border-radius: .5rem;
+        //padding: 0 15%;
+        border-radius: .2rem;
     }
-.search-btn
-{
-    margin: 1px;
-}
 
 .mobile-nav
 {

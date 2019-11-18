@@ -206,10 +206,6 @@ html {
 }
 
 body {
-  overflow-x: hidden;
-}
-
-body {
   font-family: "Roboto", sans-serif;
 }
 
@@ -223,20 +219,6 @@ body {
 }
 @media (max-width: 37.5em) {
   .logo--text {
-    font-size: 2rem;
-  }
-}
-
-.logo-icons {
-  font-size: 3rem;
-}
-@media (max-width: 56.25em) {
-  .logo-icons {
-    font-size: 2.5rem;
-  }
-}
-@media (max-width: 37.5em) {
-  .logo-icons {
     font-size: 2rem;
   }
 }
@@ -381,7 +363,7 @@ body {
 }
 .icons--item {
   list-style-type: none;
-  float: left;
+  display: inline-block;
 }
 .icons--item:not(:last-child) {
   margin-right: 3rem;
@@ -418,6 +400,7 @@ body {
   list-style-type: none;
   float: left;
   margin-right: 3rem;
+  padding-top: 2rem;
 }
 .nav--link:link, .nav--link:visited {
   display: inline-block;
@@ -425,7 +408,7 @@ body {
   text-transform: uppercase;
   font-size: 1.6rem;
   color: #333;
-  padding-bottom: 3rem;
+  padding-bottom: 2rem;
 }
 @media (max-width: 37.5em) {
   .nav--link:link, .nav--link:visited {
@@ -438,55 +421,15 @@ body {
   border-bottom: 0.1rem solid #47d1cc;
 }
 
-.container {
-  display: flex;
-  flex-flow: column wrap;
-  margin-bottom: 6rem;
-}
-
-[class^=row__] {
-  flex-wrap: wrap;
-  align-content: space-between;
-  background-color: #333;
-}
-[class^=row__]:not(:last-child) {
-  margin-bottom: 6rem;
-}
-
-.row__space-around {
-  display: flex;
-  justify-content: space-around;
-}
-
-.row__space-between {
-  display: flex;
-  justify-content: space-around;
-}
-
-.row__center {
-  display: flex;
-  justify-content: center;
-}
-
-.row__end {
-  display: flex;
-  justify-content: flex-end;
-}
-
 .logo--container-template {
   background-color: #333;
   color: white;
   font-size: 2.8rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-@media (max-width: 19.375em) {
-  .logo--container-template {
-    flex-flow: column;
-  }
 }
 
+.logo--row--template {
+  text-align: center;
+}
 @media (max-width: 56.25em) {
   .logo--row--template {
     margin: 1rem 1.5rem;
@@ -499,20 +442,12 @@ body {
 }
 
 .nav--container--template {
-  background: #fff;
   color: #333;
-  font-size: 2.5rem;
-  display: flex;
-  justify-content: space-between;
 }
 @media (max-width: 56.25em) {
   .nav--container--template {
     display: none;
   }
-}
-
-.nav--row--template {
-  padding: 2rem 0 0.5rem 0;
 }
 
 .mobile-search-container {
@@ -522,12 +457,9 @@ body {
 
 .hero--container--template {
   background: linear-gradient(to bottom, rgba(246, 246, 246, 0.8), rgba(51, 51, 51, 0.8)), url("../img/coverr-lago.jpg");
-  display: flex;
   color: white;
   font-size: 5rem;
-  flex-flow: column wrap;
   height: 90vh;
-  justify-content: center;
 }
 @media (max-width: 56.25em) {
   .hero--container--template {
@@ -664,12 +596,6 @@ body {
     padding: 0.5rem 0;
   }
 }
-@media (max-width: 19.375em) {
-  .row--gallery {
-    overflow: hidden;
-  }
-}
-
 .row--template--footer {
   padding: 1rem;
   margin: 1rem;
@@ -711,12 +637,6 @@ body {
     margin: 1.5rem 0;
   }
 }
-@media (max-width: 19.375em) {
-  .item--gallery {
-    overflow: hidden;
-  }
-}
-
 .item-template--footer {
   padding: 1rem 0;
 }
@@ -769,30 +689,9 @@ body {
   }
 }
 
-.nav-bar {
-  position: relative;
-  height: calc(13rem* .55);
-  background-color: #f6f6f6;
-}
-.nav-bar .nav {
-  position: absolute;
-  bottom: calc(calc(13rem* .55) * .3);
-  left: 10%;
-}
-.nav-bar .search {
-  position: absolute;
-  bottom: calc(calc(13rem* .55) * .15);
-  right: 10%;
-}
-
 .search-input {
   border: 1px solid rgba(211, 211, 211, 0.8);
-  padding: 0 15%;
-  border-radius: 0.5rem;
-}
-
-.search-btn {
-  margin: 1px;
+  border-radius: 0.2rem;
 }
 
 .mobile-nav-checkbox {
@@ -819,19 +718,9 @@ body {
   color: rgba(211, 211, 211, 0.8);
 }
 
-.main--home {
-  max-width: 100%;
-  margin: 0 auto;
-}
-
-.hero-home {
-  text-align: center;
-}
-
 .hero-tagline {
   max-width: 70%;
   text-align: center;
-  margin: 0 auto;
 }
 @media (max-width: 56.25em) {
   .hero-tagline {

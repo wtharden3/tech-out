@@ -5,7 +5,7 @@
     &--item
     {
         list-style-type: none;
-        float: left;
+        display: inline-block;
         
         &:not(:last-child)
         {

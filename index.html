@@ -9,6 +9,7 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/main.css">
@@ -17,14 +18,16 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <header class="header">
-                <div class="logo--container-template">
-                    <div class="logo--row--template mleft-md">
+
+
+        <header class="container-fluid header">
+                <div class="row logo--container-template">
+                    <div class="col-md-6 logo--row--template">
                         <div class="logo">
-                            <h1 class="logo--text">Web<span class="span">World</span></h1>
+                            <a class="navbar-brand logo--text">Web<span class="span">World</span></a>
                         </div>
                     </div>
-                    <div class="logo--row--template mright-md">
+                    <div class="col-md-6 logo--row--template">
                         <div class="logo-icons">
                             <ul class="icons">
                                 <li class="icons--item"><a href="#" class="icons-link"><i class="fas fa-rss"></i></a></li>
@@ -36,26 +39,24 @@
                     </div>
                 </div>
     
-                <div class="nav--container--template">
-                    <div class="nav--row--template mleft-md">
+                <nav class="nav--container--template navbar navbar-light">
+                    <div class="nav--row--template">
                         <ul class="nav">
-                            <li class="nav--item"><a href="#" class="nav--link">Home</a></li>
-                            <li class="nav--item"><a href="#" class="nav--link">About Us</a></li>
-                            <li class="nav--item"><a href="#" class="nav--link">Service</a></li>
-                            <li class="nav--item"><a href="#" class="nav--link">Pages</a></li>
-                            <li class="nav--item"><a href="#" class="nav--link">Blog</a></li>
-                            <li class="nav--item"><a href="#" class="nav--link">Contact Us</a></li>
+                            <li class="nav-item nav--item"><a href="#" class="nav--link">Home</a></li>
+                            <li class="nav-item nav--item"><a href="#" class="nav--link">About Us</a></li>
+                            <li class="nav-item nav--item"><a href="#" class="nav--link">Service</a></li>
+                            <li class="nav-item nav--item"><a href="#" class="nav--link">Pages</a></li>
+                            <li class="nav-item nav--item"><a href="#" class="nav--link">Blog</a></li>
+                            <li class="nav-item nav--item"><a href="#" class="nav--link">Contact Us</a></li>
                         </ul>
                     </div>
-                    <div class="nav--row--template mright-md mobile-nav-search">
-                        <div class="search">
-                            <form class="search-bar">
-                                <input class="search-input" type="search" name="search" id="search" placeholder="Search">
-                                <button type="Submit" class="btn search-btn"><i class="fas fa-search"></i>
-                            </form>
-                        </div>
+                    <div class="nav--row--template">
+                        <form class="form-inline">
+                            <input class="form-control" type="search" name="search" id="search" placeholder="Search" aria-label="Search">
+                            <button type="submit" class="btn btn-outline-primary">Search</i>
+                        </form>
                     </div>
-                </div>
+                </nav>
 
 
 
@@ -82,9 +83,9 @@
 
 
 
-                <div class="hero--container--template">
+                <div class="row hero--container--template">
                     <div class="hero-home">
-                        <div class="hero--row mtop-xl">
+                        <div class="hero--row">
                             <h1 class="hero-heading">Welcome to our website</h1>
                         </div>
                         <div class="hero--row">
@@ -212,7 +213,7 @@
 
                  </section>
             </main>
-            
+
             <footer class="footer--section">
                 <div class="container--template--footer footer-top">
                     <div class="row--template--footer">
@@ -273,10 +274,10 @@
                     </div>
                 </div>
                 <div class="logo--container-template footer-bottom ptb-tiny">
-                    <div class="logo--row--template mleft-lg">
+                    <div class="logo--row--template">
                         <p class="copyright">&copy; 2013 Web world. All rights reserved. Theme by cssautther</p>
                     </div>
-                    <div class="logo--row--template mright-lg">
+                    <div class="logo--row--template">
                             <div class="logo-icons">
                                 <ul class="icons">
                                     <li class="icons--item"><a href="#" class="icons-link"><i class="fas fa-rss"></i></a></li>
@@ -288,7 +289,7 @@
                         </div>
                 </div>
             </footer>
-            
+          
             
         <script src="https://kit.fontawesome.com/c4e73efe4f.js" crossorigin="anonymous"></script>
         <script src="" async defer></script>

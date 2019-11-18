@@ -1,13 +1,13 @@
 .main--home
 {
     //display: block;
-    max-width: 100%;
-    margin: 0 auto;
+    //max-width: 100%;
+    //margin: 0 auto;
 }
 .hero-home
 {
     //max-width: 96rem;
-    text-align: center;
+    //text-align: center;
     //margin: 0 auto;
 }
 .hero-tagline
@@ -15,7 +15,7 @@
     max-width: 70%;
     //border: 1px solid black;
     text-align: center;
-    margin: 0 auto;
+    //margin: 0 auto;
 
     @include respon(tab-port)
     {
