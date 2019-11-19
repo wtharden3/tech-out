@@ -364,6 +364,14 @@ body {
   color: #333;
 }
 
+.input:invalid {
+  border: 0.2rem solid red;
+}
+
+.input:valid {
+  border: 0.1rem solid green;
+}
+
 .logo-bar {
   position: relative;
   height: calc(13rem * .45);
