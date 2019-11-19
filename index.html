@@ -199,27 +199,32 @@
                         
                  </section>
                  
-                 <section class="section--form">
-                     <div class="container--template--form">
-                         <div class="row--template center">
-                             <h1 class="heading-primary--main">Contact Us</h1>
+                 <section class="container section--form">
+                     <div class="row">
+                         <div class="col-12">
+                             <h1 class="heading-form text-center">Contact Us</h1>
                          </div>
 
-                         <div class="row">
+                         <div class="col-12">
                              <form class="form--home-page--contact-us">
                                 <div class="form-group name">
-                                    <label for="firstName">First Name</label>
+                                    <label class="form-label-text" for="firstName">First Name</label>
                                     <input type="text" class="form-control" id="firstName" aria-describedby="nameHelp" placeholder="Enter your First Name">
-                                    <small id="nameHelp" class="form-text text-muted">Please type your name</small>
+                                    <small id="nameHelp" class="form-text">Please type your name</small>
                                 </div>
                                 
                                 <div class="form-group email">
-                                    <label for="email">Email</label>
+                                    <label class="form-label-text" for="email">Email</label>
                                     <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter your email">
-                                    <small id="nameHelp" class="form-text text-muted">We never share your info</small>
+                                    <small id="emailHelp" class="form-text">We never share your info</small>
                                 </div>
-                                
-                                <button type="submit" class="btn btn-primary">Submit</button>
+                                <div class="form-group message">
+                                    <label for="message" class="form-label-text">Message</label>
+                                    <textarea name="message" id="message" cols="30" rows="10" class="form-control">Type your message here...</textarea>
+                                </div>
+                                <div class="form-group cta text-center mt-5">
+                                    <button type="submit" class="btn btn-light btn-lg">Submit</button>
+                                </div>
                                 </form>
                          </div>
                      </div>

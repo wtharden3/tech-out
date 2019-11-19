@@ -306,6 +306,20 @@ body {
   }
 }
 
+.heading-form,
+.form-label-text,
+.form-text {
+  color: #fff;
+}
+
+.heading-form {
+  font-size: 4rem;
+}
+
+.form-label-text {
+  font-size: 1.8rem;
+}
+
 .bg-video {
   position: absolute;
   float: left;
@@ -635,6 +649,7 @@ body {
 
 .footer-top {
   background-color: #5d5d5d;
+  width: 100%;
   color: #f6f6f6;
 }
 
@@ -708,8 +723,11 @@ body {
 }
 
 .section--form {
-  width: 100%;
-  background-color: #ffffff;
+  margin: 3rem auto;
+  padding: 4rem;
+  background: linear-gradient(top right, #7bd9e8 0%, #207cca 49%, #2989d8 50%, #1e5799 100%);
+  background: -webkit-linear-gradient(top right, #7bd9e8 0%, #207cca 49%, #2989d8 50%, #1e5799 100%);
+  background: -moz-linear-gradient(top right, #7bd9e8 0%, #207cca 49%, #2989d8 50%, #1e5799 100%);
 }
 
 .form--home-page--contact-us {
