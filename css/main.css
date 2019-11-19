@@ -327,10 +327,6 @@ body {
   color: rgba(246, 246, 246, 0.8);
 }
 
-.input-size {
-  padding: 2rem;
-}
-
 .bg-video {
   position: absolute;
   float: left;
