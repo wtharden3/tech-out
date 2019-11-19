@@ -206,6 +206,10 @@ html {
 }
 
 body {
+  overflow-x: hidden;
+}
+
+body {
   font-family: "Roboto", sans-serif;
 }
 
@@ -424,7 +428,6 @@ body {
   background-color: #333;
   color: white;
   font-size: 2.8rem;
-  margin: 0;
 }
 
 .logo--row--template {
@@ -432,12 +435,12 @@ body {
 }
 @media (max-width: 56.25em) {
   .logo--row--template {
-    margin: 1rem 0;
+    margin: 1rem 1.5rem;
   }
 }
 @media (max-width: 37.5em) {
   .logo--row--template {
-    margin: 0.5rem 0;
+    margin: 0.5rem 1.3rem;
   }
 }
 
@@ -461,7 +464,6 @@ body {
   color: white;
   font-size: 5rem;
   height: 90vh;
-  margin: 0;
 }
 @media (max-width: 56.25em) {
   .hero--container--template {
@@ -633,7 +635,6 @@ body {
 
 .footer-top {
   background-color: #5d5d5d;
-  width: 100%;
   color: #f6f6f6;
 }
 
