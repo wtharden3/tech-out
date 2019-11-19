@@ -114,7 +114,8 @@ body
 }
 .heading-form,
 .form-label-text,
-.form-text
+.form-text,
+.form-tagline
 {
     color: #fff;
 }
@@ -122,7 +123,17 @@ body
 {
     font-size: 4rem;
 }
-.form-label-text
+.form-label-text,
+.form-tagline
 {
     font-size: 1.8rem;
+}
+.form-text--small
+{
+    font-size: 1.2rem;
+    color: rgba($color-white, .8);
+}
+.input-size
+{
+    padding: 2rem;
 }

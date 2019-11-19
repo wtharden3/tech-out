@@ -308,7 +308,8 @@ body {
 
 .heading-form,
 .form-label-text,
-.form-text {
+.form-text,
+.form-tagline {
   color: #fff;
 }
 
@@ -316,8 +317,18 @@ body {
   font-size: 4rem;
 }
 
-.form-label-text {
+.form-label-text,
+.form-tagline {
   font-size: 1.8rem;
+}
+
+.form-text--small {
+  font-size: 1.2rem;
+  color: rgba(246, 246, 246, 0.8);
+}
+
+.input-size {
+  padding: 2rem;
 }
 
 .bg-video {
@@ -732,6 +743,15 @@ body {
 
 .form--home-page--contact-us {
   width: 100%;
+}
+
+.form-tagline {
+  display: inline-block;
+  width: 70%;
+}
+
+.input-size {
+  padding: 2rem 2rem 2rem 1rem;
 }
 
 @media (max-width: 56.25em) {

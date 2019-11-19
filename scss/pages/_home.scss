@@ -61,6 +61,15 @@
 {
     width: 100%;
 }
+.form-tagline
+{
+    display: inline-block;
+    width: 70%;
+}
+.input-size
+{
+    padding: 2rem 2rem 2rem 1rem;
+}
 @include respon(tab-port)
 {
 
