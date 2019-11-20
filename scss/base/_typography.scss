@@ -94,7 +94,8 @@ body
     font-size: 7.5rem;
     color: rgba($color-black, .8);
 }
-.footer-heading
+.row--template--footer > h2, h3
+// .footer-heading
 {
     color: $color-white;
 }
@@ -132,4 +133,7 @@ body
 {
     font-size: 1.2rem;
     color: rgba($color-white, .8);
+}
+.logo-icons > ul {
+    font-size: 2.8rem;
 }

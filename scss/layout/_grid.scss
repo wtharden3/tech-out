@@ -15,14 +15,6 @@
 {
     text-align: center;
 
-    @include respon(tab-port)
-    {
-        margin: 1rem 1.5rem;
-    }
-    @include respon(phone)
-    {
-        margin: .5rem 1.3rem;
-    }
 }
 .nav--container--template
 {
@@ -150,19 +142,19 @@
 .container--template--footer
 {
     //background-color: #ccc;
-    padding: 1rem;
-    display: flex;
+    //padding: 1rem;
+    // display: flex;
 
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    align-content: center;
+    // flex-flow: row wrap;
+    // justify-content: space-evenly;
+    // align-content: center;
 
-    @include respon(tab-port)
-    {
-        flex-flow: column wrap;
-        justify-content: center;
-        align-content: center;
-    }
+    // @include respon(tab-port)
+    // {
+    //     flex-flow: column wrap;
+    //     justify-content: center;
+    //     align-content: center;
+    // }
 }
 
 ////---ROWS--
@@ -241,19 +233,20 @@
 .row--template--footer
 {
     //background-color: powderblue;
-    padding: 1rem;
-    //border: .1rem solid #333;
-    margin: 1rem; 
+    // padding: 1rem;
+    // //border: .1rem solid #333;
+    // margin: 1rem; 
 
     //control rows within row
-    display: flex;
-    flex-flow: column wrap;
-    align-content: space-evenly;
-    width: 23%;
+    // display: flex;
+    // flex-flow: column wrap;
+    // align-content: space-evenly;
+    //width: 23%;
+    max-width: 80%;
 
     @include respon(tab-port)
     {
-        width: 80%;
+        //width: 80%;
     }
 }
 
@@ -300,7 +293,7 @@
 // }
 .item-template--footer
 {
-    padding: 1rem 0; 
+    //padding: 1rem 0; 
     //background-color: plum;
     
 }
@@ -308,10 +301,10 @@
 .footer-bottom{
     @include respon(tab-port)
     {
-        flex-flow: column wrap;
-        justify-content: center;
-        align-content: center;
-        margin: 0 auto; //just added line 281 on _grid.scss
+        // flex-flow: column wrap;
+        // justify-content: center;
+        // align-content: center;
+        // margin: 0 auto; //just added line 281 on _grid.scss
     }
 }
 
@@ -335,4 +328,7 @@
 .space-evenly
 {
     justify-content: space-evenly;
+}
+.container-fluid > section {
+    width: 100%;
 }

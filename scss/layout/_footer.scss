@@ -1,19 +1,13 @@
-.footer-top
-{
-    background-color: #5d5d5d;
-    //width: 100%;
-    color: $color-white;
-}
-.footer-bottom
-{
-    background-color: #333;
-    width: 100%;
-    color: $color-white;
-}
-.copyright{
-    @include respon(tab-port)
-    {
-        padding: 1rem;
-        text-align: center;
+.footer{
+    &-top,
+    &-bottom{
+        color: $color-white;
+        //width: 100%;
+    }
+    &-top{
+        background-color: #5d5d5d;
+    }
+    &-bottom{
+        background-color: #333;
     }
 }
