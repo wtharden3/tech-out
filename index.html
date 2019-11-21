@@ -207,16 +207,16 @@
                          </div>
 
                          <div class="col-12">
-                             <form name="contact" class="form--home-page--contact-us">
+                             <form method="post" name="contact" class="form--home-page--contact-us" autocomplete="off">
                                 <div class="form-group name">
-                                    <label class="form-label-text" for="firstName">First Name &ast;</label>
-                                    <input required type="text" class="form-control input-size input" id="firstName" aria-describedby="nameHelp" placeholder="Enter your First Name">
+                                    <label class="form-label-text" for="firstname">First Name &ast;</label>
+                                    <input name="firstname" required type="text" class="form-control input-size input" id="firstName" aria-describedby="nameHelp" placeholder="Enter your First Name">
                                     <small id="nameHelp" class="form-text form-text--small">Please type your name</small>
                                 </div>
                                 
                                 <div class="form-group email">
                                     <label class="form-label-text" for="email">Email &ast;</label>
-                                    <input required type="email" class="form-control input-size input" id="email" aria-describedby="emailHelp" placeholder="Enter your email">
+                                    <input name="email" required type="email" class="form-control input-size input" id="email" aria-describedby="emailHelp" placeholder="Enter your email">
                                     <small id="emailHelp" class="form-text form-text--small">We never share your info</small>
                                 </div>
                                 <div class="form-group message">
