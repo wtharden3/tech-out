@@ -19,10 +19,26 @@ $(document).ready(function(){
 
 $('.contact-form').on('submit', function(){
     let firstName = document.querySelector("input[name=firstname]");
+    let email = document.querySelector("input[name=email]");
+    let message = document.querySelector("textarea[name=message]");
+    
     if (firstName.value == ""){
-        alert("please complete this form");
-    } else {
-        alert(`form submitted ${firstName.value}`);
+            firstName.classList.add("input");
+            alert(`please enter your first name`);
+            return false;
+        }
+    if (email.value == ""){
+            email.classList.add("input");
+            alert(`Please enter your e-mail.`);
+            return false;
     }
+    if (message.value == ""){
+        messsage.classList.add("input");
+        alert (`Please, leave us a message in the message portion.`)
+    }
+    else {
+        alert(`Thanks, ${firstName.value}, we will contact you shortly!`);
+    }
+    
 })
 
