@@ -21,48 +21,75 @@ $('.contact-form').on('submit', () => {
     let firstName = document.querySelector("input[name=firstname]");
     let email = document.querySelector("input[name=email]");
     let message = document.querySelector("textarea[name=message]");
+    let mailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+    if (firstName.value != "" && email.value != "" && message.value != ""){
+        if (message.value.match(mailFormat)){
+            alert(`Thanks, ${firstName.value}! We will be contacting you shortly.`);
+            return true;
+        } 
+        else {
+            firstName.classList.add("input");
+            email.classList.add("input");
+            message.classList.add("input");
+            alert(`Please enter a valid email address`);
+            return false;
+        }
+    }
+    if (firstName.value == "" || email.value == "" || message.value == ""){
+        firstName.classList.add("input");
+        email.classList.add("input");
+        message.classList.add("input");
+        alert(`Please complete the entire form before submitting.`);
+        return false;
+    }
+});
+    //if all are filled then sent in thank you message
+
+    //if firstName, email, or message is empty then send message to complete the entire form
+
     //if name input in empty > then check if other inputs are also empty
-    if (firstName.value == ""){
-        firstName.classList.toggle("input");
-        email.classList.toggle("input");
-        message.classList.toggle("input");
-        if (email.value == ""){
-            if (message.value == ""){
-                alert(`Please comeplete the form before submitting.`);
-                return false;
-            }
-            alert (`Please enter your name and email before submtting the form`);
-            return false;
-        }
-    }
+    // if (firstName.value == ""){
+    //     firstName.classList.toggle("input");
+    //     email.classList.toggle("input");
+    //     message.classList.toggle("input");
+    //     if (email.value == ""){
+    //         if (message.value == ""){
+    //             alert(`Please comeplete the form before submitting.`);
+    //             return false;
+    //         }
+    //         alert (`Please enter your name and email before submtting the form`);
+    //         return false;
+    //     }
+    // }
     //if email input is not empty then check if name and message is empty
-    if (email.value == ""){
-        firstName.classList.toggle("input");
-        email.classList.toggle("input");
-        message.classList.toggle("input");
-        if (firstName.value == ""){
-            if (message.value == ""){
-                alert(`Please complete.`);
-                return false;
-            }
-            alert(`Please enter your first name.`);
-            return false;
-        }
-        alert(`Please enter your email address before submitting.`);
-        return false;
-    }
-    if (message.value == ""){
-        if (firstName.value == ""){
-            alert(`Please enter your name and message`);
-            return false;
-        }
-        alert(`Please enter your message.`)
-        return false;
-    }
+    // if (email.value == ""){
+    //     firstName.classList.toggle("input");
+    //     email.classList.toggle("input");
+    //     message.classList.toggle("input");
+    //     if (firstName.value == ""){
+    //         if (message.value == ""){
+    //             alert(`Please complete.`);
+    //             return false;
+    //         }
+    //         alert(`Please enter your first name.`);
+    //         return false;
+    //     }
+    //     alert(`Please enter your email address before submitting.`);
+    //     return false;
+    // }
+    // if (message.value == ""){
+    //     if (firstName.value == ""){
+    //         alert(`Please enter your name and message`);
+    //         return false;
+    //     }
+    //     alert(`Please enter your message.`)
+    //     return false;
+    // }
 
-    alert(`Thanks, ${firstName.value}! We will be contacting you shortly.`);
+    
 
-})
+// })
 // $('.contact-form').on('submit', function(){
 //     let firstName = document.querySelector("input[name=firstname]");
 //     let email = document.querySelector("input[name=email]");
