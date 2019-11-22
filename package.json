@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/wtharden3/tech-out/issues"
   },
-  "homepage": "https://github.com/wtharden3/tech-out#readme"
+  "homepage": "https://github.com/wtharden3/tech-out#readme",
+  "dependencies": {
+    "jquery": "^3.4.1"
+  }
 }
