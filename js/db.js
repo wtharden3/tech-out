@@ -24,7 +24,7 @@ $('.contact-form').on('submit', () => {
     let mailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
     if (firstName.value != "" && email.value != "" && message.value != ""){
-        if (message.value.match(mailFormat)){
+        if (email.value.match(mailFormat)){
             alert(`Thanks, ${firstName.value}! We will be contacting you shortly.`);
             return true;
         } 
