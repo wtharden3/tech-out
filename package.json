@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/wtharden3/tech-out#readme",
   "dependencies": {
+    "express": "^4.17.1",
     "jquery": "^3.4.1"
   }
 }
