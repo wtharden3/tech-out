@@ -14,6 +14,18 @@ $(document).ready(function(){
             //     alert("please enter your name, whitney!");
             // }
         // }
+        /////////testing start
+
+async function getAll(){
+    const url = '/db.json';
+    const response = await fetch(url);
+    const data = await response.json();
+    console.log(data);
+    return data;
+}
+
+getAll();
+///////testing end
     
 });
 
@@ -44,6 +56,8 @@ $('.contact-form').on('submit', () => {
         return false;
     }
 });
+
+
     //if all are filled then sent in thank you message
 
     //if firstName, email, or message is empty then send message to complete the entire form
