@@ -16,15 +16,35 @@ $(document).ready(function(){
         // }
         /////////testing start
 
+        const url = '/db.json';
+
 async function getAll(){
-    const url = '/db.json';
     const response = await fetch(url);
     const data = await response.json();
     console.log(data);
+    //console.log(data.posts[0].id);
     return data;
 }
 
 getAll();
+
+async function getOne(i){
+    const response = await fetch(url);
+    const data = await response.json();
+    //console.log(data.submissions[i].message);
+    const id = data.submissions[i].id;
+    console.log(id);
+    const fn = data.submissions[i].firstname;
+    console.log(fn);
+    const em = data.submissions[i].email;
+    console.log(em);
+    const msg = data.submissions[i].message;
+    console.log(msg);
+    //console.log(data);
+}
+
+
+getOne(1);
 ///////testing end
     
 });

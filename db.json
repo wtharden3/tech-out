@@ -4,13 +4,25 @@
       "id": 1,
       "title": "json-server",
       "author": "typicode"
+    },
+    {
+      "id": 2,
+      "title": "testing",
+      "author": "Whitney"
     }
   ],
-  "comments": [
+  "submissions": [
     {
       "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "firstname": "some comment",
+      "email": 1,
+      "message": "this is a test message"
+    },
+    {
+      "id": 2,
+      "firstname": "Whitney",
+      "email": "email@email.com",
+      "message": "this is a test message from Whitney"
     }
   ],
   "profile": {
