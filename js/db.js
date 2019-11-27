@@ -49,6 +49,18 @@ getOne(1);
     
 });
 
+async function create(data){
+    let options = {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+    }
+    const response = await fetch(url, options);
+    const outcome = await response.json();
+}
+
 $('.contact-form').on('submit', () => {
     let firstName = document.querySelector("input[name=firstname]");
     let email = document.querySelector("input[name=email]");
