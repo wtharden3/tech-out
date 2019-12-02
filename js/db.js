@@ -1,3 +1,5 @@
+//import { create } from "domain";
+
 $(document).ready(function(){
     
         console.log("document is ready");
@@ -22,7 +24,8 @@ async function getAll(){
     const response = await fetch(url);
     const data = await response.json();
     console.log(data);
-    //console.log(data.posts[0].id);
+    console.table(data);
+    //console.log(data.subs[0].id);
     return data;
 }
 
@@ -30,24 +33,35 @@ getAll();
 
 async function getOne(i){
     const response = await fetch(url);
+    console.log(response);
+    console.table(response);
+    
     const data = await response.json();
-    //console.log(data.submissions[i].message);
-    const id = data.submissions[i].id;
-    console.log(id);
-    const fn = data.submissions[i].firstname;
+    console.log(data);
+    console.table(data);
+    
+    console.table(data.subs[0]);
+    console.table(data.subs[1]);
+
+    const id = data.subs;
+    console.log(id[0]);
+    console.table(id[0]);
+    
+    const fn = data.subs[i].firstname;
     console.log(fn);
-    const em = data.submissions[i].email;
+    console.table(fn);
+    
+    const em = data.subs[i].email;
     console.log(em);
-    const msg = data.submissions[i].message;
+    console.table(em);
+    
+    const msg = data.subs[i].message;
     console.log(msg);
-    //console.log(data);
+    console.table(msg);
 }
 
 
 getOne(1);
-///////testing end
-    
-});
 
 async function create(data){
     let options = {
@@ -59,35 +73,119 @@ async function create(data){
     }
     const response = await fetch(url, options);
     const outcome = await response.json();
+    //console.log(outcome);
 }
 
-$('.contact-form').on('submit', () => {
-    let firstName = document.querySelector("input[name=firstname]");
-    let email = document.querySelector("input[name=email]");
-    let message = document.querySelector("textarea[name=message]");
-    let mailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+async function create2(data){
+    let targeturl = `${url}/subs`;
+    let options = {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+    }
+   const response = await fetch(targeturl,options);
+   const outcome = await response.json();
+}
+//create2(inputData);
+//create('test');
 
-    if (firstName.value != "" && email.value != "" && message.value != ""){
-        if (email.value.match(mailFormat)){
-            alert(`Thanks, ${firstName.value}! We will be contacting you shortly.`);
-            return true;
-        } 
-        else {
+async function update(id, input){
+    let options = {
+
+    }
+    const response = await fetch(`${url}/${id}`, options);
+    const data = await response.json();
+    console.log(data);
+}
+
+//console.log(name);
+
+///////testing end
+    
+    let form = $('.contact-form');
+
+    form.on('submit', () => {
+        let that = this;
+        that = form;
+        console.table(that.serializeArray());
+        let inputData = that.serializeArray();
+        console.log(inputData);
+        console.table(inputData);
+        event.preventDefault();
+        
+        let firstName = document.querySelector("input[name=firstname]");
+        let email = document.querySelector("input[name=email]");
+        let message = document.querySelector("textarea[name=message]");
+        let mailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+        if (firstName.value != "" && email.value != "" && message.value != ""){
+            if (email.value.match(mailFormat)){
+                //create2(inputData);
+                //alert(`Thanks, ${firstName.value}! We will be contacting you shortly.`);
+                // console.log(`firstName: ${firstName}`);
+                // console.log(`firstName.value: ${firstName.value}`);
+                return true;
+            } 
+            else {
+                firstName.classList.add("input");
+                email.classList.add("input");
+                message.classList.add("input");
+                alert(`Please enter a valid email address`);
+                return false;
+            }
+        }
+        if (firstName.value == "" || email.value == "" || message.value == ""){
             firstName.classList.add("input");
             email.classList.add("input");
             message.classList.add("input");
-            alert(`Please enter a valid email address`);
+            alert(`Please complete the entire form before submitting.`);
             return false;
         }
-    }
-    if (firstName.value == "" || email.value == "" || message.value == ""){
-        firstName.classList.add("input");
-        email.classList.add("input");
-        message.classList.add("input");
-        alert(`Please complete the entire form before submitting.`);
-        return false;
-    }
-});
+    }); //end form on submit
+
+}); // end document.ready
+
+
+// let form = $('.contact-form');
+
+// form.on('submit', () => {
+//     let that = this;
+//     that = form;
+//     console.log(that.serializeArray());
+//     let inputData = that.serializeArray();
+//     event.preventDefault();
+    
+//     let firstName = document.querySelector("input[name=firstname]");
+//     let email = document.querySelector("input[name=email]");
+//     let message = document.querySelector("textarea[name=message]");
+//     let mailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+//     if (firstName.value != "" && email.value != "" && message.value != ""){
+//         if (email.value.match(mailFormat)){
+//             create2(inputData);
+//             //alert(`Thanks, ${firstName.value}! We will be contacting you shortly.`);
+//             // console.log(`firstName: ${firstName}`);
+//             // console.log(`firstName.value: ${firstName.value}`);
+//             return true;
+//         } 
+//         else {
+//             firstName.classList.add("input");
+//             email.classList.add("input");
+//             message.classList.add("input");
+//             alert(`Please enter a valid email address`);
+//             return false;
+//         }
+//     }
+//     if (firstName.value == "" || email.value == "" || message.value == ""){
+//         firstName.classList.add("input");
+//         email.classList.add("input");
+//         message.classList.add("input");
+//         alert(`Please complete the entire form before submitting.`);
+//         return false;
+//     }
+// });
 
 
     //if all are filled then sent in thank you message
