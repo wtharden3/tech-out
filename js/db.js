@@ -113,9 +113,9 @@ async function update(id, input){
         let that = this;
         that = form;
         event.preventDefault(); //prevent reloading form on submit
-        // console.log(`that`);
-        // console.log(that);
-        // console.table(that);
+         console.log(`that`);
+         console.log(that);
+         console.table(that);
         // console.log(`that.serializeArray`);
         // console.table(that.serializeArray());
         //let inputData = JSON.stringify(that);
@@ -124,6 +124,43 @@ async function update(id, input){
         console.log(`inputData`);
         console.log(inputData);
         console.table(inputData);
+
+        console.log(`inputData[1]`);
+        console.log(inputData[1]);
+        console.table(inputData[1]);
+
+        console.log(`inputData[1]["name"]`);
+        console.log(inputData[1]["name"]);
+        console.table(inputData[1]["name"]);
+
+        let postEmail = inputData[1]["name"];
+        let postValue2 = inputData[1]["value"];
+        console.log(`postEmail`);
+        console.table(postEmail);
+        console.log(`postValue2`);
+        console.table(postValue2);
+
+        console.log(`inputData["value"]`);
+        console.log(inputData["value"]);
+        console.table(inputData["value"]);
+
+        let postType = (i) => {
+            let t = inputData[i]["name"];
+            return t;
+        }
+        let postValue = (i) => {
+            let v = inputData[i]["value"];
+            return v;
+        }
+
+        console.log(`postType`);
+        console.table(postType(1));
+        console.log(`postValue`);
+        console.table(postValue(1));
+
+
+
+
         // console.log(`parseData`);
         //console.log(parseData);
         //console.table(parseData);
@@ -140,8 +177,9 @@ async function update(id, input){
                 
                 //add update but needs to loop "id" so that it isn't overwritting previous data
                 //psuedo: if ...id == "undefined" insert data
-                update(1, inputData);
-                alert(`Thanks, ${firstName.value}! We will be contacting you shortly.`);
+                //update(1, inputData);
+
+                //alert(`Thanks, ${firstName.value}! We will be contacting you shortly.`);
                 return true;
             } 
             else {
