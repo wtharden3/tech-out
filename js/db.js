@@ -6,12 +6,12 @@ $(document).ready(function(){
 
         /////////testing start
 
-const url = '/db.json';
+const url = 'http://localhost:8080/subs';
 
 async function getAll(){
     const response = await fetch(url);
     const jsondata = await response.json();
-    console.log(jsondata);
+    console.log(`jsondata`);
     console.table(jsondata);
     //console.log(data.subs[0].id);
     return jsondata;
@@ -21,38 +21,41 @@ getAll();
 
 async function getOne(i){
     const response = await fetch(url);
-    console.log(response);
-    console.table(response);
+    // console.log(`response`);
+    // console.table(response);
     
     const data = await response.json();
-    console.log(data);
+    console.log(`data`);
     console.table(data);
     
 
-    const id = data.subs;
-    console.log(id[i]);
-    console.table(id[i]);
+    console.log(`data[${i}]`);
+    //console.log(data[i]);
+    console.table(data[i]);
     
-    const fn = data.subs[i].firstname;
-    console.log(fn);
-    console.table(fn);
+    // const fn = data.subs[i].firstname;
+    // console.log(fn);
+    // console.table(fn);
     
-    const em = data.subs[i].email;
-    console.log(em);
-    console.table(em);
+    // const em = data.subs[i].email;
+    // console.log(em);
+    // console.table(em);
     
-    const msg = data.subs[i].message;
-    console.log(msg);
-    console.table(msg);
+    // const msg = data.subs[i].message;
+    // console.log(msg);
+    // console.table(msg);
 }
 
 
+getOne(0);
 getOne(1);
+getOne(2);
+getOne(3);
 
-async function postData(data){
+//this works below
+async function createPostData(data){
     let options = {
-        //allow: 'GET, POST, HEAD',
-        method: 'post', //not allowed? 405
+        method: 'post',
         headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json'
@@ -62,10 +65,7 @@ async function postData(data){
     const response = await fetch(url, options)
     .then((response) => response.json())
     .then(console.log(`done!`));
-    //const jsondata = await response.json();
-    //return jsondata;
-    //.then((response) => response.json());
-    //console.log(outcome);
+    return response;
 }
 
 // async function create2(data){
@@ -91,11 +91,16 @@ async function postData(data){
 
 async function update(id, input){
     let options = {
-
+        method: 'post',
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(input) //works
     }
-    const response = await fetch(`${url}/${id}`, options);
-    const data = await response.json();
-    console.log(data);
+    const response = await fetch(`${url}/${id}`, options)
+    .then((response) => response.json())
+    .then(console.log(`done with data update!`));
 }
 
 //console.log(name);
@@ -131,10 +136,12 @@ async function update(id, input){
         if (firstName.value != "" && email.value != "" && message.value != ""){
             if (email.value.match(mailFormat)){
                 //create(that);
-                postData(inputData);
+                //createPostData(inputData); //this is if db.json is empty
+                
+                //add update but needs to loop "id" so that it isn't overwritting previous data
+                //psuedo: if ...id == "undefined" insert data
+                update(1, inputData);
                 alert(`Thanks, ${firstName.value}! We will be contacting you shortly.`);
-                // console.log(`firstName: ${firstName}`);
-                // console.log(`firstName.value: ${firstName.value}`);
                 return true;
             } 
             else {

@@ -1,6 +1,5 @@
 {
-  "subs": 
-  [
+  "subs": [
     {
       "id": 1,
       "firstname": "some comment",
@@ -12,6 +11,20 @@
       "firstname": "Whitney",
       "email": "email@email.com",
       "message": "this is a test message from Whitney"
-    }
+    },
+    [
+      {
+        "name": "firstname",
+        "value": "fghjk"
+      },
+      {
+        "name": "email",
+        "value": "wtharden@hotmail.com"
+      },
+      {
+        "name": "message",
+        "value": "ghjkl;"
+      }
+    ]
   ]
 }
