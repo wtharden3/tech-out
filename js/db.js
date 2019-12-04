@@ -4,29 +4,17 @@ $(document).ready(function(){
     
         console.log("document is ready");
 
-        // let firstName = document.forms['contact']['firstname'].value;
-        // if (firstName == ""){
-        //     console.log("please enter your first name");
-        // }
-
-        // function validateForm(){
-        //     let firstName = document.querySelector("input[name=firstname]").value;
-        //     console.log(firstName);
-            // if (firstName == ""){
-            //     alert("please enter your name, whitney!");
-            // }
-        // }
         /////////testing start
 
-        const url = '/db.json';
+const url = '/db.json';
 
 async function getAll(){
     const response = await fetch(url);
-    const data = await response.json();
-    console.log(data);
-    console.table(data);
+    const jsondata = await response.json();
+    console.log(jsondata);
+    console.table(jsondata);
     //console.log(data.subs[0].id);
-    return data;
+    return jsondata;
 }
 
 getAll();
@@ -40,12 +28,10 @@ async function getOne(i){
     console.log(data);
     console.table(data);
     
-    console.table(data.subs[0]);
-    console.table(data.subs[1]);
 
     const id = data.subs;
-    console.log(id[0]);
-    console.table(id[0]);
+    console.log(id[i]);
+    console.table(id[i]);
     
     const fn = data.subs[i].firstname;
     console.log(fn);
@@ -63,31 +49,43 @@ async function getOne(i){
 
 getOne(1);
 
-async function create(data){
+async function postData(data){
     let options = {
-        method: 'POST',
+        //allow: 'GET, POST, HEAD',
+        method: 'post', //not allowed? 405
         headers: {
+            'Accept': 'application/json',
             'Content-Type': 'application/json'
         },
-        body: JSON.stringify(data)
+        body: JSON.stringify(data) //works
     }
-    const response = await fetch(url, options);
-    const outcome = await response.json();
+    const response = await fetch(url, options)
+    .then((response) => response.json())
+    .then(console.log(`done!`));
+    //const jsondata = await response.json();
+    //return jsondata;
+    //.then((response) => response.json());
     //console.log(outcome);
 }
 
-async function create2(data){
-    let targeturl = `${url}/subs`;
-    let options = {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(data)
-    }
-   const response = await fetch(targeturl,options);
-   const outcome = await response.json();
-}
+// async function create2(data){
+//     //let targeturl = `${url}/subs`;
+//     let options = {
+//         method: 'POST',
+//         headers: {
+//             'Content-Type': 'application/json'
+//         },
+//         body: data //JSON.stringify(data) 
+//     }
+//    const response = await fetch(url,options);
+//    const jsondata = await response.json();
+//    //return response;
+//    return jsondata;
+//   // .then((data) => );
+//    console.log(response);
+//    console.table(response);
+//    //const outcome = await response.json();
+// }
 //create2(inputData);
 //create('test');
 
@@ -101,19 +99,29 @@ async function update(id, input){
 }
 
 //console.log(name);
+//async function postManData();
 
 ///////testing end
     
     let form = $('.contact-form');
-
     form.on('submit', () => {
         let that = this;
         that = form;
-        console.table(that.serializeArray());
-        let inputData = that.serializeArray();
+        event.preventDefault(); //prevent reloading form on submit
+        // console.log(`that`);
+        // console.log(that);
+        // console.table(that);
+        // console.log(`that.serializeArray`);
+        // console.table(that.serializeArray());
+        //let inputData = JSON.stringify(that);
+        let inputData = that.serializeArray(); //omit the trailing commas?
+        //let parseData = JSON.parse(inputData);
+        console.log(`inputData`);
         console.log(inputData);
         console.table(inputData);
-        event.preventDefault();
+        // console.log(`parseData`);
+        //console.log(parseData);
+        //console.table(parseData);
         
         let firstName = document.querySelector("input[name=firstname]");
         let email = document.querySelector("input[name=email]");
@@ -122,8 +130,9 @@ async function update(id, input){
 
         if (firstName.value != "" && email.value != "" && message.value != ""){
             if (email.value.match(mailFormat)){
-                //create2(inputData);
-                //alert(`Thanks, ${firstName.value}! We will be contacting you shortly.`);
+                //create(that);
+                postData(inputData);
+                alert(`Thanks, ${firstName.value}! We will be contacting you shortly.`);
                 // console.log(`firstName: ${firstName}`);
                 // console.log(`firstName.value: ${firstName.value}`);
                 return true;
