@@ -6,7 +6,9 @@ $(document).ready(function(){
 
         /////////testing start
 
-const url = 'http://localhost:8080/subs';
+        const dbUrl = 'http://localhost:8080';
+
+        const url = 'http://localhost:8080/subs';
 
 async function getAll(){
     const response = await fetch(url);
@@ -67,6 +69,53 @@ async function createPostData(data){
     .then(console.log(`done!`));
     return response;
 }
+
+//works but ends with 500 (Internal Server Error) - commented out return respose;
+async function createID(i, firstname, email, message){
+    let options = {
+        method: 'post',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(
+            {
+                "id": i,
+                "firstname": firstname.value,
+                "email": email.value,
+                "message": message.value
+            }
+        )//end of Json.stringify
+    }
+    const response = await fetch(url, options)
+    .then((response) => response.json())
+    .then(console.log(`your db was updated`));
+    //return response;
+}
+ //createID(4);
+
+//what do you want it to look like
+// {
+//     "id": 2,
+//     "firstname": "Whitney",
+//     "email": "email@email.com",
+//     "message": "this is a test message from Whitney"
+//   },
+//what does it actually look like now
+[
+    {
+      "name": "firstname",
+      "value": "fghjk"
+    },
+    {
+      "name": "email",
+      "value": "wtharden@hotmail.com"
+    },
+    {
+      "name": "message",
+      "value": "ghjkl;"
+    }
+  ]
+
 
 // async function create2(data){
 //     //let targeturl = `${url}/subs`;
@@ -179,6 +228,13 @@ async function update(id, input){
                 //psuedo: if ...id == "undefined" insert data
                 //update(1, inputData);
 
+                // console.log(`firstName`);
+                // console.log(firstName.value);
+                // console.log(`email`);
+                // console.log(email.value);
+                // console.log(`message`);
+                // console.log(message.value);
+                createID(6, firstName, email, message);
                 //alert(`Thanks, ${firstName.value}! We will be contacting you shortly.`);
                 return true;
             } 
