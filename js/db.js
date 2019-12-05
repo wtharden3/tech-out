@@ -61,4 +61,24 @@ $(document).ready(function(){
         }
     }); //end form on submit
 
+    //view all data
+    async function getAll(){
+        const response = await fetch(url);
+        const jsondata = await response.json();
+        console.log(`this is so you can view all the data in the database`);
+        console.table(jsondata);
+        return jsondata;
+    }
+    getAll();
+
+    //research how to avoid a pending promise
+    /**
+     * async await waits until promise is returned
+     */
+    async function getAll2(){
+        const response = await fetch(url);
+        const jsondata = await response.json();
+        return jsondata;
+    }
+
 }); // end document.ready
