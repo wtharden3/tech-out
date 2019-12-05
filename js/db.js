@@ -10,49 +10,45 @@ $(document).ready(function(){
 
         const url = 'http://localhost:8080/subs';
 
-async function getAll(){
-    const response = await fetch(url);
-    const jsondata = await response.json();
-    console.log(`jsondata`);
-    console.table(jsondata);
-    //console.log(data.subs[0].id);
-    return jsondata;
-}
+        async function getAll(){
+            const response = await fetch(url);
+            const jsondata = await response.json();
+            return jsondata;
+        }
 
-getAll();
 
 async function getOne(i){
     const response = await fetch(url);
-    // console.log(`response`);
-    // console.table(response);
-    
     const data = await response.json();
-    console.log(`data`);
-    console.table(data);
-    
-
     console.log(`data[${i}]`);
     //console.log(data[i]);
     console.table(data[i]);
-    
-    // const fn = data.subs[i].firstname;
-    // console.log(fn);
-    // console.table(fn);
-    
-    // const em = data.subs[i].email;
-    // console.log(em);
-    // console.table(em);
-    
-    // const msg = data.subs[i].message;
-    // console.log(msg);
-    // console.table(msg);
+    return data;
+}
+async function loopDataThenCreate(firstname, email, message){
+    const response = await fetch(url);
+    const data = await response.json();
+    let ind = data.length+1;
+    let options = {
+        method: 'post',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(
+            {
+                "id": ind,
+                "firstname": firstname.value,
+                "email": email.value,
+                "message": message.value
+            }
+        ) //end of JSON.stringify()
+    }
+    const response2 = await fetch(url, options)
+    .then((response2) => response2.json());
+    return response2;
 }
 
-
-getOne(0);
-getOne(1);
-getOne(2);
-getOne(3);
+//loopDataThenCreate();
 
 //this works below
 async function createPostData(data){
@@ -91,30 +87,10 @@ async function createID(i, firstname, email, message){
     .then(console.log(`your db was updated`));
     //return response;
 }
+//get all
+//if index
  //createID(4);
 
-//what do you want it to look like
-// {
-//     "id": 2,
-//     "firstname": "Whitney",
-//     "email": "email@email.com",
-//     "message": "this is a test message from Whitney"
-//   },
-//what does it actually look like now
-[
-    {
-      "name": "firstname",
-      "value": "fghjk"
-    },
-    {
-      "name": "email",
-      "value": "wtharden@hotmail.com"
-    },
-    {
-      "name": "message",
-      "value": "ghjkl;"
-    }
-  ]
 
 
 // async function create2(data){
@@ -218,6 +194,7 @@ async function update(id, input){
         let email = document.querySelector("input[name=email]");
         let message = document.querySelector("textarea[name=message]");
         let mailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+        //let num = ;
 
         if (firstName.value != "" && email.value != "" && message.value != ""){
             if (email.value.match(mailFormat)){
@@ -234,7 +211,7 @@ async function update(id, input){
                 // console.log(email.value);
                 // console.log(`message`);
                 // console.log(message.value);
-                createID(6, firstName, email, message);
+                loopDataThenCreate(firstName, email, message);
                 //alert(`Thanks, ${firstName.value}! We will be contacting you shortly.`);
                 return true;
             } 
