@@ -4,7 +4,7 @@ $(document).ready(function(){
     //const dbUrl = 'http://localhost:8080';
     const url = 'http://localhost:8080/subs';
 
-    async function loopDataThenCreate(firstname, email, message){
+    async function createNewEntry(firstname, email, message){
         const response = await fetch(url);
         const data = await response.json();
         let ind = data.length+1;
@@ -40,7 +40,7 @@ $(document).ready(function(){
 
         if (firstName.value != "" && email.value != "" && message.value != ""){
             if (email.value.match(mailFormat)){
-                loopDataThenCreate(firstName, email, message);
+                createNewEntry(firstName, email, message);
                 alert(`Thanks, ${firstName.value}! We will be contacting you shortly.`);
                 return true;
             } 
